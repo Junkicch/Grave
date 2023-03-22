@@ -279,15 +279,16 @@ const waitForImages = () => {
 
 waitForImages();
 
-$(window).on('scroll', _.debounce(function() {
-    var $header = $('header'),
-        headerHeight = $header.outerHeight(),
-        windowTop = $(this).scrollTop();
-    
-    if (windowTop > headerHeight) {
-        $header.addClass('small');
-    } else {
-        $header.removeClass('small');
-    }
-}, 200));
-
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.opacity = "100";
+  } else {
+    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").style.opacity = "0";
+  }
+  prevScrollpos = currentScrollPos;
+}

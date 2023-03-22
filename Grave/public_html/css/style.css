@@ -10,16 +10,16 @@ and open the template in the editor.
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
 :root {
-  --card-largura: 200px;
-  --card-altura: 300px;
-  --card-duracao-transicao: 800ms;
-  --card-transicao-tipo-saida: ease;
+    --card-largura: 200px;
+    --card-altura: 300px;
+    --card-duracao-transicao: 800ms;
+    --card-transicao-tipo-saida: ease;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -30,24 +30,39 @@ body{
     font-family: 'Roboto Condensed';
 }
 .carrosel{
- width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.787);
-  overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.787);
+    overflow: hidden;
 }
 
-header{ 
-    background-color: #1E1E1E;
-    height: 15%;
+header{
+    background-color: transparent;
+    height: 10%;
     position: fixed;
+    z-index: 10;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#navbar{ 
+    background-color: transparent;
+    height: 10%;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s opacity 0.3s; 
     width: 100%;
     z-index: 9;
     display: flex; 
     align-items: center; 
-    justify-content: center; 
+    justify-content: center;
+    opacity: 100%;
+    
 
     /*      position: relative;
       width: 100%;
@@ -61,10 +76,27 @@ header{
     */
 }
 
+#navbar a {
+  float: left;
+  display: block;
+  position: relative;
+    background-color: transparent; 
+    font-family: 'Roboto Condensed';
+    float: left;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+#navbar a:hover {
+  background-color: #601BE1; 
+}
 
 .small {
-  height: 10%;
-  background-color: #009739; 
+    height: 10%;
+    background-color: #009739; 
 }
 
 .logo{
@@ -217,18 +249,17 @@ header{
 }
 
 nav{
+    background-color: transparent;
     position: relative;
     z-index: 10;
-    transform: translate(29%,160%);
+    transform: translate(1%,70%);
 }
 
-nav:after{
-    
-}
+
 .menu ul li{
 
     position: relative;
-    background-color: #1E1E1E; 
+    background-color: transparent; 
     font-family: 'Roboto Condensed';
     float: left;
     width: 180px;
@@ -534,11 +565,11 @@ table{
 }
 
 .main{
-  display: flex;
-  position: absolute;
-  top: 90%;
-  transform: translate(50%,50%)
-  background: transparent;
+    display: flex;
+    position: absolute;
+    top: 90%;
+    transform: translate(50%,50%)
+        background: transparent;
 }
 
 .categorias{
@@ -593,7 +624,8 @@ table{
     position: absolute;
     top: 450%;
     left:-65%;
-    transform: translate(50%,50%)
+    transform: translate(50%,50%);
+    justify-content: center;
 }
 
 .contato{
@@ -610,7 +642,7 @@ table{
     text-align: center;
     justify-content: center;
     align-content: center;
-    transform: translate(140%,40%);
+    transform: translate(170%,40%);
 }
 .con2{
     width: 200px;
@@ -619,7 +651,7 @@ table{
     text-align: center;
     justify-content: center;
     align-content: center;
-    transform: translate(160%,40%)
+    transform: translate(190%,40%)
 }
 .con3{
     width: 200px;
@@ -628,17 +660,17 @@ table{
     text-align: center;
     justify-content: center;
     align-content: center;
-    transform: translate(180%,40%)
+    transform: translate(220%,40%)
 }
 .con4{
-    display: compact;
+
     width: 200px;
     margin: 10px;
     font-size: 28px;
     text-align: center;
     justify-content: center;
     align-content: center;
-    transform: translate(200%,40%)
+    transform: translate(250%,40%)
 }
 .insta{
     width: 50px;
@@ -823,286 +855,286 @@ table{
     color: #61de2a
 }
 button {
-  border: none;
-  background: none;
-  cursor: pointer;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 button:focus {
-  outline: none;
-  border: none;
+    outline: none;
+    border: none;
 }
 
 .conteudo {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .conteudo__background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  filter: blur(8px);
-  pointer-events: none;
-  user-select: none;
-  overflow: hidden;
-  top: -50%;
-  left:-50%;
-  transform: translate(50%,50%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+    top: -50%;
+    left:-50%;
+    transform: translate(50%,50%);
 }
 .conteudo__background::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: 1;
-  opacity: 0.8;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+    opacity: 0.8;
 }
 .conteudo__backgorund__imagem {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
-  width: 100%;
-  height: 100%;
-  transition: transform 1000ms ease, opacity 1000ms ease;
-  overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
+    width: 100%;
+    height: 100%;
+    transition: transform 1000ms ease, opacity 1000ms ease;
+    overflow: hidden;
 }
 .conteudo__backgorund__imagem img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .conteudo__backgorund__imagem.imagem--corrente {
-  opacity: 1;
-  --image-translate-offset: 0;
+    opacity: 1;
+    --image-translate-offset: 0;
 }
 .conteudo__backgorund__imagem.imagem--anterior,
 .conteudo__backgorund__imagem.imagem--proxima {
-  opacity: 0;
+    opacity: 0;
 }
 .conteudo__backgorund__imagem.imagem--anterior {
-  --image-translate-offset: -25%;
+    --image-translate-offset: -25%;
 }
 .conteudo__backgorund__imagem.imagem--proxima {
-  --image-translate-offset: 25%;
+    --image-translate-offset: 25%;
 }
 
 .lista__cards {
-  position: absolute;
-  width: calc(3 * var(--card-largura));
-  height: auto;
+    position: absolute;
+    width: calc(3 * var(--card-largura));
+    height: auto;
 }
 .lista__cards__btn {
-  --btn-size: 35px;
-  width: var(--btn-size);
-  height: var(--btn-size);
-  position: absolute;
-  top: -50%;
-  transform: translateY(1200%);
-  z-index: 8;
+    --btn-size: 35px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    position: absolute;
+    top: -50%;
+    transform: translateY(1200%);
+    z-index: 8;
 }
 .lista__cards__btn.btn-esquerda {
-  left: -50%;
+    left: 90%;
 }
 .lista__cards__btn.btn--direita {
-  right: -5%;
+    right: -100%;
 }
 .lista__cards__btn .icone {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .lista__cards__btn .icone svg {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .lista__cards .conteudo__cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  perspective: 1000px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
 }
 
 .card {
- --card-translateY-offset: 100vh;
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  transform: translate(-50%, 40%) translateX(var(--card-translateX-offset))
-    translateY(var(--card-translateY-offset))
-    rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
-  display: inline-block;
-  width: var(--card-largura);
-  height: var(--card-altura);
-  transition: transform var(--card-duracao-transicao)
-    var(--card-transicao-tipo-saida);
-  user-select: none;
+    --card-translateY-offset: 100vh;
+    position: absolute;
+    left: 145%;
+    top: 50%;
+    transform: translate(-50%, 40%) translateX(var(--card-translateX-offset))
+        translateY(var(--card-translateY-offset))
+        rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
+    display: inline-block;
+    width: var(--card-largura);
+    height: var(--card-altura);
+    transition: transform var(--card-duracao-transicao)
+        var(--card-transicao-tipo-saida);
+    user-select: none;
 }
 .card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: 1;
-  transition: opacity var(--card-duracao-transicao)
-    var(--card-transicao-tipo-saida);
-  opacity: calc(1 - var(--opacity));
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+    transition: opacity var(--card-duracao-transicao)
+        var(--card-transicao-tipo-saida);
+    opacity: calc(1 - var(--opacity));
 }
 .imagem--card {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 .imagem--card img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .card.card--corrente {
-  --current-card-rotation-offset: 0;
-  --card-translateX-offset: 0;
-  --card-rotation-offset: var(--current-card-rotation-offset);
-  --card-scale-offset: 1.2;
-  --opacity: 0.8;
+    --current-card-rotation-offset: 0;
+    --card-translateX-offset: 0;
+    --card-rotation-offset: var(--current-card-rotation-offset);
+    --card-scale-offset: 1.2;
+    --opacity: 0.8;
 }
 .card.card--anterior {
-  --card-translateX-offset: calc(-1 * var(--card-largura) * 1.1);
-  --card-rotation-offset: 25deg;
+    --card-translateX-offset: calc(-1 * var(--card-largura) * 1.1);
+    --card-rotation-offset: 25deg;
 }
 .card.card--proximo {
-  --card-translateX-offset: calc(var(--card-largura) * 1.1);
-  --card-rotation-offset: -25deg;
+    --card-translateX-offset: calc(var(--card-largura) * 1.1);
+    --card-rotation-offset: -25deg;
 }
 .card.card--anterior,
 .card.card--proximo {
-  --card-scale-offset: 0;
-  --opacity: 0;
+    --card-scale-offset: 0;
+    --opacity: 0;
 }
 
 .listagem__informacoes {
-  position: absolute;
-  width: calc(3 * var(--card-largura));
-  height: var(--card-altura);
-  pointer-events: none;
-  transform: translate(50%,70%);
+    position: absolute;
+    width: calc(3 * var(--card-largura));
+    height: var(--card-altura);
+    pointer-events: none;
+    transform: translate(50%,70%);
 }
 .listagem__informacoes .conteudo__informacoes {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  perspective: 1000px;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .info {
-  margin-bottom: calc(var(--card-altura) / 8);
-  margin-left: calc(var(--card-largura) / 1.5);
-  transform: translateZ(2rem);
-  transition: transform var(--card-duracao-transicao)
-    var(--card-transicao-tipo-saida);
+    margin-bottom: calc(var(--card-altura) / 8);
+    margin-left: calc(var(--card-largura) / 1.5);
+    transform: translateZ(2rem);
+    transition: transform var(--card-duracao-transicao)
+        var(--card-transicao-tipo-saida);
 }
 .info .texto {
-  position: relative;
-  font-family: "Poppins";
-  font-size: calc(var(--card-largura) * var(--texto-size-offset, 0.2));
-  white-space: nowrap;
-  color: #fff;
-  width: fit-content;
+    position: relative;
+    font-family: "Poppins";
+    font-size: calc(var(--card-largura) * var(--texto-size-offset, 0.2));
+    white-space: nowrap;
+    color: #fff;
+    width: fit-content;
 }
 .info .nome,
 .info .localizacao {
-  texto-transform: uppercase;
+    texto-transform: uppercase;
 }
 .info .localizacao {
-  font-weight: 800;
+    font-weight: 800;
 }
 .info .localizacao {
-  --mg-left: 40px;
-  --texto-size-offset: 0.12;
-  font-weight: 600;
-  margin-left: var(--mg r-left);
-  margin-bottom: calc(var(--mg-left) / 2);
-  padding-bottom: 0.8rem;
+    --mg-left: 40px;
+    --texto-size-offset: 0.12;
+    font-weight: 600;
+    margin-left: var(--mg r-left);
+    margin-bottom: calc(var(--mg-left) / 2);
+    padding-bottom: 0.8rem;
 }
 .info .localizacao::before,
 .info .localizacao::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  left: 0%;
-  transform: translate(calc(-1 * var(--mg-left)), -50%);
+    content: "";
+    position: absolute;
+    background: #fff;
+    left: 0%;
+    transform: translate(calc(-1 * var(--mg-left)), -50%);
 }
 .info .localizacao::after {
-  bottom: 0;
-  width: 60px;
-  height: 2px;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
 }
 .info .descricao {
-  --texto-size-offset: 0.065;
-  font-weight: 500;
+    --texto-size-offset: 0.065;
+    font-weight: 500;
 }
 .info.informacoes__corrente {
-  opacity: 1;
-  display: block;
+    opacity: 1;
+    display: block;
 }
 .info.informacoes__anterior,
 .info.informacoes__seguinte {
-  opacity: 0;
-  display: none;
+    opacity: 0;
+    display: none;
 }
 
 .conteudo__carregamento {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  z-index: 200;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    z-index: 200;
 }
 
 .conteudo__carregamento .carregamento {
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  border: 3px solid #009739;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  animation: rotation 1s linear infinite;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 3px solid #009739;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: rotation 1s linear infinite;
 }
 
 @keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media only screen and (min-width: 800px) {
-  :root {
-    --card-largura: 250px;
-    --card-altura: 400px;
-  }
+    :root {
+        --card-largura: 250px;
+        --card-altura: 400px;
+    }
 }
