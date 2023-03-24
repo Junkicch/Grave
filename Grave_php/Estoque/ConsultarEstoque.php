@@ -48,44 +48,44 @@
                         </ul>
                     <li><a href="#">Almoxarifado</a>
                         <ul>
-                            <li><a href="../Estoque/Compras.php">Cadastrar Nova Compra</a></li>
-                            <li><a href="../Estoque/ConsultarEstoque.php">Consultar Estoque</a>
+                            <li><a href="Estoque/Compras.php">Cadastrar Nova Compra</a></li>
+                            <li><a href="Estoque/ConsultarEstoque.php">Consultar Estoque</a>
                         </ul>
-                        
+
                         </nav>
                         </header>
                         <main>
-                            <h1>Consultar Produtos Cadastrados</h1>
+                            <h1>Consultar Estoque</h1>
                             <table>
                                 <tr class="id">
-                                    <td align="center"> <strong>ID</strong></td>
-                                    <td align="center"> <strong>Nome</strong></td>
-                                    <td align="center"> <strong>Tipo</strong></td>	
-                                    <td align="center"> <strong>Tamanho</strong></td>	
-                                    <td align="center"> <strong>Cor</strong></td>
-                                    <td align="center"> <strong>Coleção</strong></td>
-                                    <td align="center"> <strong>Preço</strong></td>
+                                    <td align="center"> <strong>ID Compra</strong></td>
                                     <td align="center"> <strong>Quantidade</strong></td>
+                                    <td align="center"> <strong>Modelo</strong></td>	
+                                    <td align="center"> <strong>Cor</strong></td>	
+                                    <td align="center"> <strong>Marca</strong></td>
+                                    <td align="center"> <strong>Valor Total</strong></td>
+                                    <td align="center"> <strong>Data da compra</strong></td>
+                                   
                                     <td width="10"> <strong>Editar</strong></td>
                                     <td width="10"> <strong>Deletar</strong></td>
                                 </tr>
 
                                 <?php
                                 include("../conectarbd.php");
-                                $selecionar = mysqli_query($conn, "SELECT * FROM tb_produto");
+                                $selecionar = mysqli_query($conn, "SELECT * FROM tb_estoque");
                                 while ($campo = mysqli_fetch_array($selecionar)) {
                                     ?>
                                     <tr class="usuarios">
-                                        <td align="center"><?= $campo["id_produto"] ?></td>
-                                        <td align="center"><?= $campo["nome"] ?></td>
-                                        <td align="center"><?= $campo["tipo"] ?></td>
-                                        <td align="center"><?= $campo["tamanho"] ?></td>
-                                        <td align="center"><?= $campo["cor"] ?></td>
-                                        <td align="center"><?= $campo["colecao"] ?></td>
-                                        <td align="center"><?= $campo["preco"] ?></td>
+                                        <td align="center"><?= $campo["id_compra"] ?></td>
                                         <td align="center"><?= $campo["quantidade"] ?></td>
+                                        <td align="center"><?= $campo["modelo"] ?></td>
+                                        <td align="center"><?= $campo["cor"] ?></td>
+                                        <td align="center"><?= $campo["marca"] ?></td>
+                                        <td align="center"><?= $campo["valor_total"] ?></td>
+                                        <td align="center"><?= $campo["data_compra"] ?></td>
+                                       
                                         <td align="center"><a href="FormEditarProduto.php?editarid=<?php echo $campo ['id_produto']; ?>" class="editar">Editar</a></td>
-                                        <td align="center"><a href="ExcluirProduto.php?p=excluir&produto=<?php echo $campo['id_produto']; ?>" class="editar">Excluir</a></td>
+                                        <td align="center"><a href="ExcluirCompras.php?p=excluir&produto=<?php echo $campo['id_compra']; ?>" class="editar">Excluir</a></td>
                                     </tr>
                                 <?php } ?>
                             </table><br>

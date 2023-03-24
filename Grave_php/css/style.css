@@ -145,6 +145,31 @@ option{
     width: 30%;
 }
 
+.compras{
+    font-family: 'Roboto Condensed';
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    background-color:  #1E1E1E;
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+}
+.funcionario{
+    font-family: 'Roboto Condensed';
+    color: white;
+    position: absolute;
+    top: 140%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    background-color:  #1E1E1E;
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+}
+
 h1{
     color: white;
     text-align: center;

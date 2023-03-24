@@ -113,10 +113,12 @@
                             <li><a href="../funcionario/FormFuncionario.php">Cadastrar</a></li>
                             <li><a href="../funcionario/Consultarfuncionario.php">Consultar</a>
                         </ul>
-                    <li><a href="#">Compras</a>
+                    <li><a href="#">Almoxarifado</a>
                         <ul>
-                            <li><a href="../Compras/Compras.php">Compras</a></li>
+                            <li><a href="../Estoque/Compras.php">Cadastrar Nova Compra</a></li>
+                            <li><a href="../Estoque/ConsultarEstoque.php">Consultar Estoque</a>
                         </ul>
+
                         </nav>
                         </header>
 
@@ -126,18 +128,19 @@
 
                             <div class="funcionario" >
                                 <h2>Cadastrar Funcionário</h2>
-                                <form method="post" action="cadastrarfornecedor.php" class="formulario">
+                                <form method="post" action="cadastrarfuncionario.php" class="formulario">
 
-                                    <table>
+                                    <table> 
+
+
                                         <ul class="form">
                                             <label id="lbnome" class="labelInput"> Nome:</label>
                                             <input type="text" id="iptnome" name="nome" id="nome" class="inputUser"/>
                                         </ul>
 
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Data de Nascimento:</label>
-                                            <input type="date" id="iptnome" name="data_nasc" id="nome" class="inputUser"/>
-                                        </ul>
+
+
+
 
                                         <ul class="form">
                                             <label id="lbnome" class="labelInput"> CPF:</label>
@@ -174,7 +177,10 @@
                                             <label id="lbnome" class="labelInput"> Data de expedição:</label>
                                             <input type="date" id="iptnome" name="data_expedicao" id="nome" class="inputUser"/>
                                         </ul>
-
+                                        <ul class="form">
+                                            <label id="lbnome" class="labelInput"> Data de Nascimento:</label>
+                                            <input type="date" id="iptnome" name="data_nasc" id="nome" class="inputUser"/>
+                                        </ul>
 
                                         <ul class="form">
                                             <label id="lbnome" class="labelInput"> Sexo:</label>

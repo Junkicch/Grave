@@ -53,7 +53,7 @@
         <input type="text" name="preco" placeholder="Nome" value="<?=$campo["preco"]?>"> <br><br>
          
         <input type="submit" class="botoes" value="Salvar" >
-        <a href="Consultarfornecedor.php"><input type="button" class="botoes" value="Cancelar"/></a>
+        <a href="ConsultarFuncionario.php"><input type="button" class="botoes" value="Cancelar"/></a>
         
       </form>
 

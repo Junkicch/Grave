@@ -47,10 +47,12 @@
                             <li><a href="../funcionario/Consultarfuncionario.php">Consultar</a>
                         </ul>
                     </li>
-                        <li><a href="#">Compras</a>
-                            <ul>
-                                <li><a href="../Compras/Compras.php">Compras</a></li>
-                            </ul>
+                        <li><a href="#">Almoxarifado</a>
+                        <ul>
+                            <li><a href="../Estoque/Compras.php">Cadastrar Nova Compra</a></li>
+                            <li><a href="../Estoque/ConsultarEstoque.php">Consultar Estoque</a>
+                        </ul>
+                        
                         </nav>
                         </header>
                         <main>
