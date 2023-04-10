@@ -4,30 +4,30 @@ include("../conectarbd.php");
 
 $recid= filter_input(INPUT_POST, 'id');
 
-$recnome= filter_input(INPUT_POST, 'nome_usu');
+$recnome= filter_input(INPUT_POST, 'nome');
 
-$reccep= filter_input(INPUT_POST, 'cep_usu');
+$reccpf= filter_input(INPUT_POST, 'cpf');
 
-$recendereco= filter_input(INPUT_POST, 'endereco_usu');
+$recdata= filter_input(INPUT_POST, 'data_nasc');
 
-$recn= filter_input(INPUT_POST, 'numero_usu');
+$reccep= filter_input(INPUT_POST, 'cep');
 
-$reccomplemento= filter_input(INPUT_POST, 'complemento_usu');
+$recendereco= filter_input(INPUT_POST, 'endereco');
 
-$recbairro= filter_input(INPUT_POST, 'bairro_usu');
+$reccomplemento= filter_input(INPUT_POST, 'complemento');
 
-$reccidade= filter_input(INPUT_POST, 'cidade_usu');
+$recbairro= filter_input(INPUT_POST, 'bairro');
 
-$recestado= filter_input(INPUT_POST, 'estado_usu');
+$recestado= filter_input(INPUT_POST, 'estado');
 
-$reccel= filter_input(INPUT_POST, 'tel_cel_usu');
+$reccel= filter_input(INPUT_POST, 'telefone');
 
-$recemail= filter_input(INPUT_POST, 'email_usu');
-
-
+$recemail= filter_input(INPUT_POST, 'email');
 
 
-  if(mysqli_query($conn, "UPDATE tb_usuario SET nome_usu='$recnome', cep_usu='$reccep', endereco_usu='$recendereco', numero_usu='$recn', complemento_usu='$reccomplemento', bairro_usu='$recbairro', cidade_usu='$reccidade', estado_usu='$recestado', tel_cel_usu='$reccel', email_usu='$recemail' WHERE id_usuario='$recid'")) {
+
+
+  if(mysqli_query($conn, "UPDATE tb_usuario SET nome='$recnome', cpf='$reccpf',cep='$reccep', data_nasc='$recdata', endereco='$recendereco',  complemento='$reccomplemento', bairro='$recbairro', cidade='$reccidade', telefone='$reccel', email='$recemail' WHERE id_usuario='$recid'")) {
 
     echo "<script>alert('Dados alterado com sucesso!'); window.location = 'Consultarusuario.php';</script>";
 
