@@ -37,6 +37,9 @@ body{
     align-items: center;
     background: rgba(0, 0, 0, 0.787);
     overflow: hidden;
+    position: absolute;
+    left: -50%;
+    transform: translate(50%,50%);
 }
 
 header{
@@ -619,7 +622,7 @@ table{
 .main{
     display: flex;
     position: absolute;
-    top: 90%;
+    top: 170%;
     transform: translate(50%,50%)
         background: transparent;
 }
@@ -674,7 +677,7 @@ table{
     width: 1583px;
     height: 250px;
     position: absolute;
-    top: 450%;
+    top: 530%;
     left:-65%;
     transform: translate(50%,50%);
     justify-content: center;
@@ -933,7 +936,7 @@ button:focus {
     pointer-events: none;
     user-select: none;
     overflow: hidden;
-    top: -50%;
+    top: 50%;
     left:-50%;
     transform: translate(50%,50%);
 }
@@ -1038,14 +1041,14 @@ button:focus {
     height: var(--btn-size);
     position: absolute;
     top: -50%;
-    transform: translateY(1200%);
+    transform: translateY(2000%);
     z-index: 8;
 }
 .lista__cards__btn.btn-esquerda {
-    left: 50%;
+    left: -9%;
 }
 .lista__cards__btn.btn--direita {
-    right: -9%;
+    right: 52%;
 }
 .lista__cards__btn .icone {
     width: 100%;
@@ -1065,9 +1068,9 @@ button:focus {
 .card {
     --card-translateY-offset: 100vh;
     position: absolute;
-    left: 80%;
-    top: 50%;
-    transform: translate(-50%, 40%) translateX(var(--card-translateX-offset))
+    left: 20%;
+    top: 150%;
+    transform: translate(-50%, 130%) translateX(var(--card-translateX-offset))
         translateY(var(--card-translateY-offset))
         rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
     display: inline-block;
@@ -1129,7 +1132,7 @@ button:focus {
     width: calc(var(--card-largura));
     height: var(--card-altura);
     pointer-events: none;
-    transform: translate(50%,70%);
+    transform: translate(50%,160%);
 }
 .listagem__informacoes .conteudo__informacoes {
     position: relative;
