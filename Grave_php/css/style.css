@@ -1041,14 +1041,14 @@ button:focus {
     height: var(--btn-size);
     position: absolute;
     top: -50%;
-    transform: translateY(2000%);
+    transform: translateY(3100%);
     z-index: 8;
 }
 .lista__cards__btn.btn-esquerda {
-    left: -9%;
+    left: 45%;
 }
 .lista__cards__btn.btn--direita {
-    right: 52%;
+    right: -2%;
 }
 .lista__cards__btn .icone {
     width: 100%;
@@ -1070,7 +1070,7 @@ button:focus {
     position: absolute;
     left: 20%;
     top: 150%;
-    transform: translate(-50%, 130%) translateX(var(--card-translateX-offset))
+    transform: translate(110%, 220%) translateX(var(--card-translateX-offset))
         translateY(var(--card-translateY-offset))
         rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
     display: inline-block;
@@ -1226,6 +1226,20 @@ button:focus {
     animation: rotation 1s linear infinite;
 }
 
+
+.video{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie{
+    position: absolute;
+    left: 10%;
+    transform: translate(-3%,50%);
+}
 @keyframes rotation {
     0% {
         transform: rotate(0deg);
