@@ -202,6 +202,11 @@
                                 </ul>
 
                                 <ul class="form">
+                                    <label id="lbnome" class="labelInput">Imagem:</label>
+                                    <input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
+                                    <div><input name="imagem" type="file" value="<?= $campo["imagem"] ?>"/></div>
+                                </ul>
+                                <ul class="form">
 
                                     <input type="submit" class="hvr-fade " value="Salvar" >
                                     <a href="Consultarproduto.php"><input type="button" class="hvr-fade " value="Cancelar"/></a>
