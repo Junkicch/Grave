@@ -18,7 +18,9 @@ $recpreco= filter_input(INPUT_POST, 'preco');
 
 $recqntd= filter_input(INPUT_POST, 'quantidade');
 
-  if(mysqli_query($conn, "UPDATE tb_produto SET nome='$recnome', tipo='$rectipo', tamanho='$rectamanho', cor='$reccor', colecao='$reccolecao', preco='$recpreco', quantidade='$recqntd' WHERE id_produto='$recid'")) {
+$recimagem= filter_input(INPUT_POST, 'imagem');
+
+  if(mysqli_query($conn, "UPDATE tb_produto SET nome='$recnome', tipo='$rectipo', tamanho='$rectamanho', cor='$reccor', colecao='$reccolecao', preco='$recpreco', quantidade='$recqntd', imagem='$recimagem' WHERE id_produto='$recid'")) {
 
     echo "<script>alert('Dados alterado com sucesso!'); window.location = 'Consultarproduto.php';</script>";
 
