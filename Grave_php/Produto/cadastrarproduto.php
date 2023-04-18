@@ -9,9 +9,10 @@
         $colecao = $_POST["colecao"];
         $preco = $_POST["preco"];
         $qntd = $_POST["quantidade"];
+        $imagem = $_POST["imagem"];
         $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
         mysqli_select_db($conn, '$db_grave');
-        $sql = "INSERT INTO tb_produto(nome,tipo, tamanho, cor, colecao, preco, quantidade) VALUES ('$nome','$tipo', '$tamanho', '$cor', '$colecao', '$preco', '$qntd')";
+        $sql = "INSERT INTO tb_produto(nome,tipo, tamanho, cor, colecao, preco, quantidade, imagem) VALUES ('$nome','$tipo', '$tamanho', '$cor', '$colecao', '$preco', '$qntd','$imagem')";
         if (mysqli_query($conn, $sql)) {
             echo "<script>alert('Seus dados foram salvos !'); window.location = '../indexmenu.html';</script>";
         } else {
