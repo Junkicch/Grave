@@ -183,6 +183,12 @@
                             <label id="lbnome" class="labelInput">Quantidade:</label>
                             <input type="text"  name="quantidade" id="nome" class="inputUser"/>
                         </ul>
+        
+                        <ul class="form">
+                            <label id="lbnome" class="labelInput">Imagem:</label>
+                            <input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
+                            <div><input name="imagem" type="file"/></div>
+                        </ul>
 
                         <ul class="form">
                             <button type="submit" id="Cadastrar" class="hvr-fade ">Cadastrar</button>
