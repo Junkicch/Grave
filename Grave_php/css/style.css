@@ -106,8 +106,8 @@ header{
     position: fixed;
     z-index: 11;
     top: -5%;
-    left: 45%;
-    transform: translate(41%,50%);
+    left: 37%;
+    transform: translate(50%,50%);
 }
 .hud{
     display: flex;
@@ -307,7 +307,7 @@ nav{
     background-color: transparent;
     position: relative;
     z-index: 10;
-    transform: translate(0%,70%);
+    transform: translate(14%,70%);
 }
 
 
@@ -1040,12 +1040,12 @@ button:focus {
     width: var(--btn-size);
     height: var(--btn-size);
     position: absolute;
-    top: -50%;
+    top: -150%;
     transform: translateY(3100%);
     z-index: 8;
 }
 .lista__cards__btn.btn-esquerda {
-    left: 45%;
+    left: 30%;
 }
 .lista__cards__btn.btn--direita {
     right: -2%;
@@ -1070,7 +1070,7 @@ button:focus {
     position: absolute;
     left: 20%;
     top: 150%;
-    transform: translate(110%, 220%) translateX(var(--card-translateX-offset))
+    transform: translate(55%, 110%) translateX(var(--card-translateX-offset))
         translateY(var(--card-translateY-offset))
         rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
     display: inline-block;
@@ -1237,8 +1237,8 @@ button:focus {
 }
 .movie{
     position: absolute;
-    left: 10%;
-    transform: translate(-3%,50%);
+    left: 0%;
+    transform: translate(-24%,0%);
 }
 @keyframes rotation {
     0% {
