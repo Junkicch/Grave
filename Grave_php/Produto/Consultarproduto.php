@@ -46,12 +46,10 @@
                             <li><a href="../funcionario/FormFuncionario.php">Cadastrar</a></li>
                             <li><a href="../funcionario/Consultarfuncionario.php">Consultar</a>
                         </ul>
-                    <li><a href="#">Almoxarifado</a>
+                    <li><a href="#">Compras</a>
                         <ul>
-                            <li><a href="../Estoque/Compras.php">Cadastrar Nova Compra</a></li>
-                            <li><a href="../Estoque/ConsultarEstoque.php">Consultar Estoque</a>
+                            <li><a href="../Compras/Compras.php">Compras</a></li>
                         </ul>
-                        
                         </nav>
                         </header>
                         <main>
@@ -66,6 +64,7 @@
                                     <td align="center"> <strong>Coleção</strong></td>
                                     <td align="center"> <strong>Preço</strong></td>
                                     <td align="center"> <strong>Quantidade</strong></td>
+                                    <td align="center"> <strong>Imagem</strong></td>
                                     <td width="10"> <strong>Editar</strong></td>
                                     <td width="10"> <strong>Deletar</strong></td>
                                 </tr>
@@ -84,6 +83,7 @@
                                         <td align="center"><?= $campo["colecao"] ?></td>
                                         <td align="center"><?= $campo["preco"] ?></td>
                                         <td align="center"><?= $campo["quantidade"] ?></td>
+                                        <td align="center"><img src="<?= "../img/".$campo["imagem"] ?>"width="100" height="100" ></td>
                                         <td align="center"><a href="FormEditarProduto.php?editarid=<?php echo $campo ['id_produto']; ?>" class="editar">Editar</a></td>
                                         <td align="center"><a href="ExcluirProduto.php?p=excluir&produto=<?php echo $campo['id_produto']; ?>" class="editar">Excluir</a></td>
                                     </tr>

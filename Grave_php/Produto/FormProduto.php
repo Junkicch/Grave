@@ -115,12 +115,10 @@
                             <li><a href="../funcionario/Consultarfuncionario.php">Consultar</a>
                         </ul>
                     </li>
-                    <li><a href="#">Almoxarifado</a>
+                    <li><a href="#">Compras</a>
                         <ul>
-                            <li><a href="../Estoque/Compras.php">Cadastrar Nova Compra</a></li>
-                            <li><a href="../Estoque/ConsultarEstoque.php">Consultar Estoque</a>
+                            <li><a href="../Compras/Compras.php">Compras</a></li>
                         </ul>
-                        
                 </ul>
             </nav>
         </header>
@@ -183,7 +181,7 @@
                             <label id="lbnome" class="labelInput">Quantidade:</label>
                             <input type="text"  name="quantidade" id="nome" class="inputUser"/>
                         </ul>
-        
+
                         <ul class="form">
                             <label id="lbnome" class="labelInput">Imagem:</label>
                             <input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
