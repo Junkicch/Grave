@@ -44,12 +44,14 @@ body{
 
 header{
     background-color: transparent;
+    width: 20%;
     height: 10%;
     position: fixed;
     z-index: 10;
     display: flex; 
     align-items: center; 
     justify-content: center;
+    left: 80%;
 }
 
 #navbar{ 
@@ -65,7 +67,7 @@ header{
     align-items: center; 
     justify-content: center;
     opacity: 100%;
-    
+
 
     /*      position: relative;
       width: 100%;
@@ -80,13 +82,13 @@ header{
 }
 
 #navbar a {
-  float: left;
-  display: block;
-  position: relative;
+    float: left;
+    display: block;
+    position: relative;
     background-color: transparent; 
     font-family: 'Roboto Condensed';
     float: left;
-    width: 180px;
+    width: 190px;
     height: 30px;
     text-align: center;
     line-height: 40px;
@@ -94,7 +96,7 @@ header{
 }
 
 #navbar a:hover {
-  background-color: #601BE1; 
+    background-color: #601BE1; 
 }
 
 .small {
@@ -106,172 +108,128 @@ header{
     position: fixed;
     z-index: 11;
     top: -5%;
-    left: 37%;
+    left: 45%;
     transform: translate(50%,50%);
 }
 .hud{
     display: flex;
     position: fixed;
     top: 5%;
-    left: 89%;
-    transform: translate(-50%,-50%);
+    left: 80%;
 }
 
 .title {
-                color: #1A1110;
-                margin-bottom: 5%;
-            }
+    color: #1A1110;
+    margin-bottom: 5%;
+}
 
-            .modalBtn {
-                height: 5vh;
-                min-height: 30px;
-                width: 15vh;
-                min-width: 130px;
+.modalBtn {
+    height: 5vh;
+    min-height: 30px;
+    width: 15vh;
+    min-width: 130px;
 
-                border-radius: 5px;
-                border: 0;
-                outline: 0;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
 
-                background-color: #c8d7e6;
-            }
+    background-color: #c8d7e6;
+}
 
-            .text {
-                margin-top: 0;
-                font-size: 1.1em;
-                color: white;
-            }
+.text {
+    margin-top: 0;
+    font-size: 1.1em;
+    color: white;
+}
 
-            .modal {
-                display: none; 
-                position: fixed;
-                z-index: 15; 
-                left: 0;
-                top: 0;
-                width: 100%; 
-                height: 100%;
-                overflow: auto;
-                background-color: rgba(0,0,0,0.4);
-                transition: display 1s;
-            }
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 15; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    transition: display 1s;
+}
 
-            .modal .content {
-                background-color: #D3D3D3;
-                padding: 20px;
-                border-radius: 5px;
-                width: 30%; 
-                height: 100%;
-                display: flex;
-                margin-left: 70%;
-                flex-direction: column;
-                align-items: center;
-                
-                font-family: 'Roboto Condensed';
-                color: var(--title);
-            }
-            
+.modal .content {
+    background-color: #D3D3D3;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%; 
+    height: 100%;
+    display: flex;
+    margin-left: 70%;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Roboto Condensed';
+    color: var(--title);
+}
+
 .cadastrar{
-    text-align: center;
-    margin-top: 5px;
+    margin-left: 10px;
+    padding: 0px;
+    margin-right: 0px;
+    border-radius: 15px;
+    border: 0px;
+    height: 20px;
     width: 80px;
     background-color: transparent; 
-    border-radius: 15px;
-    display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
+    overflow: hidden;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-}
-.cadastrar:before {
-    border-radius: 10px;
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #601BE1;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
 }
 .cadastrar:hover, .cadastrar:focus, .cadastrar:active {
+    background-color: #601BE1 ;
     color: white;
 }
-.cadastrar:hover:before, .cadastrar:focus:before, .cadastrar:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
 
-}
 .cadastrar a{
-    text-align: center;
-    margin-top: 2px;
-    padding: 2px;
     color: #61de2a;
     text-decoration: none;
-
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .login{
-    margin-top: 5px;
-    margin-left: 5px; 
-    display: inline-block;
+    margin-left: 10px;
+    padding: 0px;
+    margin-right: 0px;
+    border-radius: 15px;
+    border: 0px;
+    height: 20px;
+    width: 55px;
+    background-color: transparent; 
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
+    overflow: hidden;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-}
-.login:before {
-    border-radius: 10px;
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #601BE1;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
 }
 .login:hover, .login:focus, .login:active {
+    background-color: #601BE1 ;
     color: white;
 }
-.login:hover:before, .login:focus:before, .login:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
 
-}
 .login a{
-    margin-left: 7px;
     color: #61de2a;
     text-decoration: none;
-    margin-right: 8px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .car{
@@ -307,7 +265,7 @@ nav{
     background-color: transparent;
     position: relative;
     z-index: 10;
-    transform: translate(14%,70%);
+    transform: translate(0%,70%);
 }
 
 
@@ -637,8 +595,8 @@ table{
     margin: 5px;
     width: 320px;
     height: 540px;
-    top: -5%;
-    left: -30%;
+    top: 5%;
+    left: -40%;
     transform: translate(50%,50%);
 }
 
@@ -647,8 +605,8 @@ table{
     margin: 5px;
     width: 320px;
     height: 540px;
-    top: 100%;
-    left: 265%;
+    top: 260%;
+    left: 285%;
     transform: translate(50%,50%);
 }
 
@@ -657,18 +615,19 @@ table{
     margin: 5px;
     width: 320px;
     height: 540px;
-    top: 200%;
-    left: -30%;
+    top: 510%;
+    left: -25%;
     transform: translate(50%,50%);
 }
 
 .cat4{
+    position: absolute;
     margin: 5px;
     width: 320px;
     height: 540px;
-    top: 50%;
-    left: 50%;
-    transform: translate(325%,360%);
+    top: 750%;
+    left: 290%;
+    transform: translate(50%,50%);
 }
 
 .footer{
@@ -677,7 +636,7 @@ table{
     width: 1583px;
     height: 250px;
     position: absolute;
-    top: 530%;
+    top: 550%;
     left:-65%;
     transform: translate(50%,50%);
     justify-content: center;
@@ -700,13 +659,14 @@ table{
     transform: translate(170%,40%);
 }
 .con2{
-    width: 200px;
+    display: block;
+    width: 400px;
     margin: 10px;
     font-size: 28px;
     text-align: center;
     justify-content: center;
     align-content: center;
-    transform: translate(190%,40%)
+    transform: translate(200%,40%)
 }
 .con3{
     width: 200px;
@@ -715,7 +675,7 @@ table{
     text-align: center;
     justify-content: center;
     align-content: center;
-    transform: translate(220%,40%)
+    transform: translate(280%,40%)
 }
 .con4{
 
@@ -734,8 +694,8 @@ table{
 
 .procura1{
     position: absolute;
-    top: 100%;
-    left:250%;
+    top: 250%;
+    left:280%;
     transform: translate(50%,50%);
     text-decoration: none;
     color: yellow;
@@ -769,8 +729,8 @@ table{
 
 .procura2{
     position: absolute;
-    top: 200%;
-    left:175%;
+    top: 490%;
+    left:173%;
     transform: translate(50%,50%);
     text-decoration: none;
     color: yellow;
@@ -804,8 +764,8 @@ table{
 
 .procura3{
     position: absolute;
-    top: 300%;
-    left:250%;
+    top: 720%;
+    left:303%;
     transform: translate(50%,50%);
     text-decoration: none;
     color: yellow;
@@ -839,8 +799,8 @@ table{
 
 .procura4{
     position: absolute;
-    top: 400%;
-    left:170%;
+    top: 960%;
+    left:165%;
     transform: translate(50%,50%);
     text-decoration: none;
     color: yellow;
@@ -874,8 +834,8 @@ table{
 
 .roupa1{
     position: absolute;
-    top: 80%;
-    left: 225%;
+    top: 210%;
+    left: 240%;
     transform: translate(50%,50%);
     font-family: 'Roboto Condensed';
     font-size: 50px;
@@ -884,8 +844,8 @@ table{
 .roupa2{
     width: 100px;
     position: absolute;
-    top: 180%;
-    left: 165%;
+    top: 450%;
+    left: 150%;
     transform: translate(50%,50%);
     font-family: 'Roboto Condensed';
     font-size: 50px;
@@ -893,8 +853,8 @@ table{
 }
 .roupa3{
     position: absolute;
-    top: 280%;
-    left: 225%;
+    top: 680%;
+    left: 255%;
     transform: translate(50%,50%);
     font-family: 'Roboto Condensed';
     font-size: 50px;
@@ -902,8 +862,8 @@ table{
 }
 .roupa4{
     position: absolute;
-    top: 380%;
-    left: 155%;
+    top: 920%;
+    left: 145%;
     transform: translate(50%,50%);
     font-family: 'Roboto Condensed';
     font-size: 50px;
@@ -1032,7 +992,7 @@ button:focus {
 
 .lista__cards {
     position: absolute;
-    width: calc(3 * var(--card-largura));
+    width: calc(2.18 * var(--card-largura));
     height: auto;
 }
 .lista__cards__btn {
@@ -1040,15 +1000,15 @@ button:focus {
     width: var(--btn-size);
     height: var(--btn-size);
     position: absolute;
-    top: -150%;
-    transform: translateY(3100%);
+    top: -50%;
+    transform: translateY(2100%);
     z-index: 8;
 }
 .lista__cards__btn.btn-esquerda {
-    left: 30%;
+    left: 25%;
 }
 .lista__cards__btn.btn--direita {
-    right: -2%;
+    right: 5%;
 }
 .lista__cards__btn .icone {
     width: 100%;
@@ -1070,7 +1030,7 @@ button:focus {
     position: absolute;
     left: 20%;
     top: 150%;
-    transform: translate(55%, 110%) translateX(var(--card-translateX-offset))
+    transform: translate(38%, 110%) translateX(var(--card-translateX-offset))
         translateY(var(--card-translateY-offset))
         rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
     display: inline-block;
@@ -1229,7 +1189,7 @@ button:focus {
 
 .video{
     position: relative;
-    width: 10%;
+    width: 18%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -1237,7 +1197,7 @@ button:focus {
 }
 .movie{
     position: absolute;
-    left: 0%;
+    left: 35%;
     transform: translate(-24%,0%);
 }
 @keyframes rotation {
