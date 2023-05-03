@@ -7,12 +7,14 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/styleCard.css">
 
             </head>
         <body>
             <div class="logo">
             <a href="indexmenu.html"><img src="img/Grave Store Logo HD.png" alt="Imagem" title="logo" width="80" height="70"/></a>
         </div>
+
             <header role="banner" class="header">
             <div class="cadastrar">
                 <a href="Usuario/FormUsuario.php">Cadastrar</a>
@@ -23,21 +25,24 @@
             <div class="car">
                 <a><img src="img/Carrinho branco.png" width="20px" height="20px"/></a>
             </div>
-        </header>-->
+        </header>
+
             <nav class="menu" id="navbar">
             <ul>
-                <li><a href="#">Camisas</a></li>
+                <li><a href="carrinho.php">Camisas</a></li>
                 <li><a href="#">Calças</a></li>
                 <li><a href="#">Moletons</a></li>
                 <li><a href="#">Tênis</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
+
         <section class="video">
             <video class="movie" width="1455" autoplay="" muted="" controlslist="nofullscreen nodownload" loop="">
                 <source src="video/blusa.mp4" type="video/mp4">
             </video>
         </section>
+
             <section class="carrossel">
                         <div class="conteudo">
                                 <div class="lista__cards">
@@ -167,9 +172,9 @@
                                         <div class="con3"><img class="insta" src="img/chamada-telefonica.png"/><div class="text">Telefone:(71)99192-8523</div></div>
                                         <div class="con4"><img class="insta" src="img/e-mail.png"/><div class="text">Email: gravestorebrasil@gmail.com</div></div>
                                     </div>
-                            </footer>-->
+                            </footer>
                         <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
-                        <script src="script.js"></script>
+                        <script src="js/script1.js"></script>
                 </body>
 </html>
