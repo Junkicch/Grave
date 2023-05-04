@@ -57,11 +57,13 @@ addItemToCart(item);
 function addItemToCart(item) {
 var cartItemElement = document.createElement('li');
         cartItemElement.classList.add('cart-item');
-        cartItemElement.innerHTML = '<span class="cart-item-name" placeholder="X">' + item.name + '</span>' +
+        cartItemElement.innerHTML ='<span class="cart-item-name" placeholder="X">' + item.name + '</span>' +
+                '<button class="cart-item-remove" style="color: yellow; background-color:transparent; border: none;">❌</button>' +
         '<span class="cart-item-quantity">1</span>' +
-        '<span class="cart-item-price">' + item.price + ' R$</span>' +
+        '<button class="add-to-cart" data-name="' + item.name + '" data-price="' + item.price + '">+</button>'+
+        '<span class="cart-item-price"> R$' + item.price + ' </span>'
         //PERSONALIZE O BOTÂO DE REMOVER POR AQUI!!
-        '<button class="cart-item-remove" style="color: yellow; background-color:transparent; border: none;">❌</button>';
+        ;
 // Adiciona um evento de clique ao botão "Remover" do item no carrinho
         var removeButton = cartItemElement.querySelector('.cart-item-remove');
         removeButton.addEventListener('click', removeCartItem);

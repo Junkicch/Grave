@@ -153,6 +153,8 @@ header{
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
     transition: display 1s;
+    align-items: center;
+    flex-direction: column;
 }
 
 .modal .content {
@@ -233,6 +235,7 @@ header{
 }
 
 .car{
+    cursor: pointer;
     margin-left: 10px;
     padding: 0px;
     margin-right: 0px;

@@ -22,9 +22,7 @@
             <div class="login">
                 <a href="Usuario/login.php">Login</a>
             </div>
-            <div class="car">
-                <a><img src="img/Carrinho branco.png" width="20px" height="20px"/></a>
-            </div>
+            
         </header>
 
             <nav class="menu" id="navbar">
