@@ -60,7 +60,7 @@ var cartItemElement = document.createElement('li');
         cartItemElement.innerHTML ='<span class="cart-item-name" placeholder="X">' + item.name + '</span>' +
                 '<button class="cart-item-remove" style="color: yellow; background-color:transparent; border: none;">❌</button>' +
         '<span class="cart-item-quantity">1</span>' +
-        '<button class="add-to-cart" data-name="' + item.name + '" data-price="' + item.price + '">+</button>'+
+        '<button class="cart-item-add">+</button>'+
         '<span class="cart-item-price"> R$' + item.price + ' </span>'
         //PERSONALIZE O BOTÂO DE REMOVER POR AQUI!!
         ;
@@ -69,7 +69,10 @@ var cartItemElement = document.createElement('li');
         removeButton.addEventListener('click', removeCartItem);
         var cartItems = document.querySelector('.cart-items');
         cartItems.appendChild(cartItemElement);
-        
+        var addButton = cartItemElement.querySelector('.cart-item-add');
+        addButton.addEventListener('click', addCartItem);
+        var cartItems = document.querySelector('.cart-items');
+        cartItems.appendChild(cartItemElement);
         
         
         
@@ -103,6 +106,25 @@ var cartItemQuantity = cartItems[i].querySelector('.cart-item-quantity');
 cartItemQuantity.innerText = currentQuantity - 1;
 } else {
 cartItems[i].remove();
+}
+}
+}
+updateCartTotal();
+        }
+
+// ADD um item do carrinho
+function addCartItem(event) {
+var buttonClicked = event.target;
+        var itemName = buttonClicked.parentElement.querySelector('.cart-item-name').innerText;
+        var cartItems = document.querySelectorAll('.cart-item');
+        for (var i = 0; i < cartItems.length; i++) {
+if (cartItems[i].querySelector('.cart-item-name').innerText === itemName) {
+var cartItemQuantity = cartItems[i].querySelector('.cart-item-quantity');
+        var currentQuantity = parseInt(cartItemQuantity.innerText);
+        if (currentQuantity > 1) {
+cartItemQuantity.innerText = currentQuantity + 1;
+} else {
+cartItems[i].add();
 }
 }
 }
