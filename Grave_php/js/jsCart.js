@@ -61,7 +61,7 @@ var cartItemElement = document.createElement('li');
                 '<button class="cart-item-remove" style="color: yellow; background-color:transparent; border: none;">❌</button>' +
         '<span class="cart-item-quantity">1</span>' +
         '<button class="cart-item-add">+</button>'+
-        '<span class="cart-item-price"> R$' + item.price + ' </span>'
+        '<span class="cart-item-price"> ' + item.price + ' </span>'
         //PERSONALIZE O BOTÂO DE REMOVER POR AQUI!!
         ;
 // Adiciona um evento de clique ao botão "Remover" do item no carrinho
@@ -69,6 +69,7 @@ var cartItemElement = document.createElement('li');
         removeButton.addEventListener('click', removeCartItem);
         var cartItems = document.querySelector('.cart-items');
         cartItems.appendChild(cartItemElement);
+        
         var addButton = cartItemElement.querySelector('.cart-item-add');
         addButton.addEventListener('click', addCartItem);
         var cartItems = document.querySelector('.cart-items');
@@ -121,7 +122,7 @@ var buttonClicked = event.target;
 if (cartItems[i].querySelector('.cart-item-name').innerText === itemName) {
 var cartItemQuantity = cartItems[i].querySelector('.cart-item-quantity');
         var currentQuantity = parseInt(cartItemQuantity.innerText);
-        if (currentQuantity > 1) {
+        if (currentQuantity >= 1) {
 cartItemQuantity.innerText = currentQuantity + 1;
 } else {
 cartItems[i].add();
@@ -156,4 +157,4 @@ const fecharCarrinho = () => {
     })
 }
         
-       
+    
