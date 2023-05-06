@@ -75,7 +75,7 @@
                                     ?>
                                     <td>
                                         <div id="div--img--card">
-                                        <img id="img--card" src="<?php echo 'img/' . $linhas['imagem']; ?>" >
+                                        <img id="img--card" src="<?php echo 'img/Roupas/' . $linhas['imagem']; ?>" >
                                         <div id="comentarios--img--card">
                                         <br><?php echo $linhas["nome"]; ?><br>
                                             <?php echo $linhas["preco"]; ?><br>
