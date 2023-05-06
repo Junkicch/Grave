@@ -14,7 +14,7 @@
         mysqli_select_db($conn, '$db_grave');
         $sql = "INSERT INTO tb_produto(nome,tipo, tamanho, cor, colecao, preco, quantidade, imagem) VALUES ('$nome','$tipo', '$tamanho', '$cor', '$colecao', '$preco', '$qntd','$imagem')";
         if (mysqli_query($conn, $sql)) {
-            echo "<script>alert('Seus dados foram salvos !'); window.location = '../indexmenu.html';</script>";
+            echo "<script>alert('Seus dados foram salvos !'); window.location = '../index.php';</script>";
         } else {
             echo "Deu erro: " . $sql . "<br>" . mysqli_error($conn);
         }

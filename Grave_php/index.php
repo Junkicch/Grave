@@ -20,7 +20,7 @@
                 <a href="Usuario/FormUsuario.php">Cadastrar</a>
             </div>
             <div class="login">
-                <a href="Usuario/login.php">Login</a>
+                <a href="login.php">Login</a>
             </div>
             
         </header>

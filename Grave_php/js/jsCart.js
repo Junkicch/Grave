@@ -52,24 +52,60 @@ var cartItemQuantity = cartItems[i].querySelector('.cart-item-quantity');
 addItemToCart(item);
         updateCartTotal();
         }
-
+//               '<?php include_once './conectarbd.php';' +
+  //                          '$sql = "select * from tb_produto";' +
+  //                          '$query = mysqli_query($conn, $sql)or die(mysqli_error($conn));' +
+  //                          '$linhas = mysqli_fetch_array($query);' +
+  //                          'if ($linhas[nome] === ' + item.name' +' && $linhas[preco] === 'item.price' +') {?>' +
+  //                                  '<td>' +
+  //                                      '<img id="img--card" src="<?php echo 'img/' . $linhas['imagem']; ?>" >' +
+  //                                      '<div class="cart-item-name">
+  //                                      <?php echo $linhas["nome"]; ?></div>' +
+  //                                      '<div class="cart-item-quantity">1</div>' +
+  //                                          '<div class="cart-item-price">
+  //                                          <?php echo $linhas["preco"]; ?></div>' +
+  //                                      '<?php
+  //                                      if ($linhas["quantidade"] > 0) {
+  //                                          ?>' +
+  //                                          
+  //                                          '<?php
+  //                                      } else {
+  //                                          echo "<label style='color:red; font-weight: bold; padding-top: 10px;'>Indisponível</label>";
+  //                                      }
+  //                                      ?>' +
+  //                                      '</div>'+
+  //                                      '</div>+
+  //                                  '</td>'+
+  //                                  '<?php
+  //                              } while ($linhas = mysqli_fetch_array($query));
+  //                              ?>' +
+  //                              '<?php'+'
+  //                          }' +
+  //                          '?>'+
+  //                     
+  //                      '</tr>'+
+//                    '</table>' -->
 // Adiciona um item ao carrinho
 function addItemToCart(item) {
 var cartItemElement = document.createElement('li');
         cartItemElement.classList.add('cart-item');
-        cartItemElement.innerHTML ='<span class="cart-item-name" placeholder="X">' + item.name + '</span>' +
-                '<button class="cart-item-remove" style="color: yellow; background-color:transparent; border: none;">❌</button>' +
+        cartItemElement.innerHTML ='<table>' + '<tr>' + '<td align="center">Nome<\td>' + 
+                '<td align="center">Qtde<\td>' + '<td align="center">Preço<\td>' + '<\tr>' +
+                '<span class="cart-item-name" placeholder="X">' +
+                item.name + '</span>' +
+                //PERSONALIZE O BOTÂO DE REMOVER POR AQUI!!
+                '<button class="cart-item-remove" >❌</button>' +
         '<span class="cart-item-quantity">1</span>' +
+        //PERSONALIZE O BOTÂO DE ADD POR AQUI!!
         '<button class="cart-item-add">+</button>'+
-        '<span class="cart-item-price"> ' + item.price + ' </span>'
-        //PERSONALIZE O BOTÂO DE REMOVER POR AQUI!!
-        ;
+        '<span class="cart-item-price"> ' + 
+        item.price + ' </span>';
 // Adiciona um evento de clique ao botão "Remover" do item no carrinho
         var removeButton = cartItemElement.querySelector('.cart-item-remove');
         removeButton.addEventListener('click', removeCartItem);
         var cartItems = document.querySelector('.cart-items');
         cartItems.appendChild(cartItemElement);
-        
+        // Adiciona um evento de clique ao botão "ADD" do item no carrinho
         var addButton = cartItemElement.querySelector('.cart-item-add');
         addButton.addEventListener('click', addCartItem);
         var cartItems = document.querySelector('.cart-items');

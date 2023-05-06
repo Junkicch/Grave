@@ -13,7 +13,7 @@
         mysqli_select_db($conn, '$db_grave');
         $sql = "INSERT INTO tb_estoque (quantidade,modelo, cor, marca, valor_total, data_compra) VALUES ('$quantidade','$modelo', '$cor', '$marca', '$valor_total', '$data_compra')";
         if (mysqli_query($conn, $sql)) {
-            echo "<script>alert('Seus dados foram salvos !'); window.location = '../indexmenu.html';</script>";
+            echo "<script>alert('Seus dados foram salvos !'); window.location = '../index.php';</script>";
         } else {
             echo "Deu erro: " . $sql . "<br>" . mysqli_error($conn);
         }

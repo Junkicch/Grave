@@ -18,7 +18,7 @@
         mysqli_select_db($conn, '$dbname');
         $sql = "INSERT INTO tb_fornecedor(nome, cnpj, tipo, cep, endereco, numero, complemento, bairro, cidade, estado, tel_cel, email) VALUES ('$nome', '$cnpj', '$tipo', '$cep', '$endereco', '$n', '$complemento', '$bairro', '$cidade', '$estado', '$cel', '$email')";
         if (mysqli_query($conn, $sql)) {
-            echo "<script>alert('Seus dados foram salvos !'); window.location = '../indexmenu.html';</script>";
+            echo "<script>alert('Seus dados foram salvos !'); window.location = '../index.php';</script>";
         } else {
             echo "Deu erro: " . $sql . "<br>" . mysqli_error($conn);
         }

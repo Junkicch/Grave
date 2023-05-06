@@ -16,7 +16,7 @@
         mysqli_select_db($conn, '$dbname');
         $sql = "INSERT INTO tb_usuario(nome, cpf, data_nasc, cep, endereco, complemento, cidade, bairro, email, telefone) VALUES ('$nome', '$cpf', '$data_nasc', '$cep', '$endereco', '$complemento' , '$cidade', '$bairro', '$email', '$telefone')";
         if (mysqli_query($conn, $sql)) {
-            echo "<script>alert('Seus dados foram salvos !'); window.location = 'FormUsuario.php';</script>";
+            echo "<script>alert('Seus dados foram salvos !'); window.location = '../index.php';</script>";
         } else {
             echo "Deu erro: " . $sql . "<br>" . mysqli_error($conn);
         }

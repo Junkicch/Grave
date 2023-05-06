@@ -20,7 +20,7 @@
                 <a href="Usuario/FormUsuario.php">Cadastrar</a>
             </div>
             <div class="login">
-                <a href="Usuario/login.php">Login</a>
+                <a href="login.php">Login</a>
             </div>
             <div class="car">
                 <a><img src="img/Carrinho branco.png" width="20px" height="20px"/></a>
@@ -48,7 +48,7 @@
                 <div class="colum"><div>Nome</div><div>Qtde</div><div>Preço</div></div>
                 <ul class="cart-items"></ul>
                 <p class="total-price">Total: R$0.00</p>
-                <form method="get" action="produto.php">
+                <form method="get" action="Produto/finalizarCompra.php">
                                                 <input type="hidden" name="produto" value="<?php echo $linhas['id_produto']; ?>">
                                                 <input type="submit" value="Comprar" class="btn btn-default" name="addCarrinho"/>
                                             </form>

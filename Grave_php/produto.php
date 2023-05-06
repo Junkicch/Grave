@@ -13,6 +13,7 @@
     <div class="row">
         <div class="col-md-12">
         <?php
+        echo "<script>alert('Compra realizada com Sucesso'); window.location = '../index.php';</script>";
         $idproduto = $_GET['produto'];
         include_once './conectarbd.php';
         $sql = "select * from tb_produto where id_produto = '$idproduto' ";
