@@ -8,7 +8,7 @@
 
         <title>Editar Funcionario</title>
 
-        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/style-usuario.css"/>
         <link rel="icon" type="imagem/png" href="../img/Marca D'água Grave Preto.png" />
         <script>
             function limpa_formulário_cep() {
