@@ -8,7 +8,7 @@
 
         <title>Editar Fornecedores</title>
 
-        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/style-usuario.css"/>
         
         <script>
             function limpa_formulário_cep() {
