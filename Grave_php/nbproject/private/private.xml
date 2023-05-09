@@ -3,14 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Grave_php/index.php</file>
-            <file>file:/C:/xampp/htdocs/Grave_php/Produto/cadastrarproduto.php</file>
-            <file>file:/C:/xampp/htdocs/Grave_php/js/jsCart.js</file>
-            <file>file:/C:/xampp/htdocs/Grave_php/Fornecedor/ConsultarFornecedor.php</file>
-            <file>file:/C:/xampp/htdocs/Grave_php/Produto/carrinho.php</file>
-            <file>file:/C:/xampp/htdocs/Grave_php/carrinho.php</file>
-            <file>file:/C:/xampp/htdocs/Grave_php/Usuario/cadastrarusuario.php</file>
-            <file>file:/C:/xampp/htdocs/Grave_php/produto.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/js/jsCart.js</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Produto/finalizarCompra.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/index_reserva.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Produto/FormProduto.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Produto/cadastrarproduto.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/index.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Produto/EditarProduto.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Usuario/FormEditarUsuario.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Funcionario/ConsultarFuncionario.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Produto/Consultarproduto.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Usuario/Consultarusuario.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/produto.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/carrinho.php</file>
+            <file>file:/C:/xampp/htdocs/Gravephp/Produto/ExcluirProduto.php</file>
         </group>
     </open-files>
 </project-private>

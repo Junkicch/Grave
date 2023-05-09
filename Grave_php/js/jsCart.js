@@ -52,15 +52,18 @@ var cartItemQuantity = cartItems[i].querySelector('.cart-item-quantity');
 addItemToCart(item);
         updateCartTotal();
         }
-//               '<?php include_once './conectarbd.php';' +
+//               '<table>' + 
+  //              '<tr>' + '<td align="center">Nome<\td>' + 
+  //              '<td align="center">Qtde<\td>' + '<td align="center">Preço<\td>' + '<\tr>' +
+  //                      '<?php include_once './conectarbd.php';' +
   //                          '$sql = "select * from tb_produto";' +
   //                          '$query = mysqli_query($conn, $sql)or die(mysqli_error($conn));' +
   //                          '$linhas = mysqli_fetch_array($query);' +
   //                          'if ($linhas[nome] === ' + item.name' +' && $linhas[preco] === 'item.price' +') {?>' +
   //                                  '<td>' +
-  //                                      '<img id="img--card" src="<?php echo 'img/' . $linhas['imagem']; ?>" >' +
+  //                                      '<img id="img--card" src="<?php echo 'img/Roupas/' . $linhas['imagem']; ?>" >' +
   //                                      '<div class="cart-item-name">
-  //                                      <?php echo $linhas["nome"]; ?></div>' +
+  //                                      <?php echo $linhas["nome"] == ; ?></div>' +
   //                                      '<div class="cart-item-quantity">1</div>' +
   //                                          '<div class="cart-item-price">
   //                                          <?php echo $linhas["preco"]; ?></div>' +
@@ -89,8 +92,7 @@ addItemToCart(item);
 function addItemToCart(item) {
 var cartItemElement = document.createElement('li');
         cartItemElement.classList.add('cart-item');
-        cartItemElement.innerHTML ='<table>' + '<tr>' + '<td align="center">Nome<\td>' + 
-                '<td align="center">Qtde<\td>' + '<td align="center">Preço<\td>' + '<\tr>' +
+        cartItemElement.innerHTML =
                 '<span class="cart-item-name" placeholder="X">' +
                 item.name + '</span>' +
                 //PERSONALIZE O BOTÂO DE REMOVER POR AQUI!!

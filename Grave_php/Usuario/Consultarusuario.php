@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Consultar Usuarios</title>
-        <link type="text/css" rel="stylesheet" href="../css/style.css">
+        <link type="text/css" rel="stylesheet" href="../css/style-usuario.css">
     
     </head>
 
