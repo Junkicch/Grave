@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Cadastrar Fornecedor</title>
         <link href="../img/Marca D'água Grave Preto.png" rel="icon">
-        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/style-usuario.css"/>
         <!--<link rel="stylesheet" href="../css/formulariotop.css"/>-->
         <script>
             function limpa_formulário_cep() {
