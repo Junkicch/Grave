@@ -6,10 +6,10 @@
 
         <meta charset="UTF-8">
 
-        <title>Editar Usuarios</title>
+        <title>Editar Usuários</title>
 
         <link href="../img/Marca D'água Grave Preto.png" rel="icon">
-        <link rel="stylesheet" href="../css/style-usuario.css"/>
+        <link rel="stylesheet" href="../css/stylee.css"/>
         <!--<link rel="stylesheet" href="../css/formulariotop.css"/>-->
         <script>
             function limpa_formulário_cep() {
@@ -93,56 +93,59 @@
         $campo = mysqli_fetch_array($selecionar);
         ?>
 
-        <header class="header" >
+     <header class="header">
             <a href="../indexmenu.html"><img src="../img/Grave Store Logo HD.png" alt="Imagem" title="logo" width="80" height="70"/></a>
-        <nav class="menu">
-            <ul>
-                
-                <li><a href="#">Usuario</a>
-                    
-               
-                    
-                    <ul>
-                        <li><a href="FormUsuario.php">Cadastrar</a></li>
-                        <li><a href="Consultarusuario.php">Consultar</a>
-                    </ul>
-                </li>
-                <li><a href="#">Produtos</a>
-                    <ul>
-                        <li><a href="../Produto/FormProduto.php">Cadastrar</a></li>
-                        <li><a href="../Produto/Consultarproduto.php">Consultar</a>
-                    </ul>
-                </li>
+            <nav class="menu">
 
-                <li><a href="#">Fornecedores</a>
                 <ul>
-                    <li><a href="../Fornecedor/FormFornecedor.php">Cadastrar</a></li>
-                    <li><a href="../Fornecedor/ConsultarFornecedor.php">Consultar</a>
-                    </ul>
-                </li>
-                
-                <li><a href="#">Vendas</a>
-                <ul>
-                    <li><a href="../Venda/FormVenda.php">Cadastrar</a></li>
-                    <li><a href="../Venda/Consultarvenda.php">Consultar</a>
-                    </ul>
-                </li>
-                
-                <li><a href="#">Funcionarios</a>
-                <ul>
-                    <li><a href="../Funcionario/FormFuncionario.php">Cadastrar</a></li>
-                    <li><a href="../Funcionario/ConsultarFuncionario.php">Consultar</a>
-                    </ul>
-                </li>
-                <li><a href="../Compra/ContatoO.php">Contato</a></li>
-            </ul>
-        </nav>
+
+                    <li><a href="#">Usuários</a>
+                        <ul>
+                            <li><a href="FormUsuario.php">Cadastrar</a>
+                            <li><a href="Consultarusuario.php">Consultar</a>
+                                 
+                        </ul>
+                    </li>
+                    <li><a href="#">Produtos</a>
+                        <ul>
+                            <li><a href="../Produto/FormProduto.php">Cadastrar</a></li>
+                            <li><a href="../Produto/Consultarproduto.php">Consultar</a>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Fornecedores</a>
+                        <ul>
+                            <li><a href="../Fornecedor/FormFornecedor.php">Cadastrar</a></li>
+                            <li><a href="../Fornecedor/Consultarfornecedor.php">Consultar</a>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Vendas</a>
+                        <ul>
+                            <li><a href="venda/FormVenda.php">Cadastrar</a></li>
+                            <li><a href="venda/Consultarvenda.php">Consultar</a>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Funcionários</a>
+                        <ul>
+                            <li><a href="../funcionario/FormFuncionario.php">Cadastrar</a></li>
+                            <li><a href="../funcionario/Consultarfuncionario.php">Consultar</a>
+                        </ul>
+                    </li>
+                   <li><a href="#">Almoxarifado</a>
+                        <ul>
+                            <li><a href="../Estoque/Compras.php">Cadastrar Nova Compra</a></li>
+                            <li><a href="../Estoque/ConsultarEstoque.php">Consultar Estoque</a>
+                        </ul>
+                        
+            </nav>
         </header>
         <main class="main">
    
           
             
-        <div class="formulario" id="box">
+        <div class="formulario" id="boxmedio">
             <form method="post" action="EditarUsuario.php" class="formulario">
                 <h2>Editar Usuarios</h2>
                 <!esta linha cria um campo oculto para passar o id_Usuario, pois senão ao clicar em Salvar o código não saberá onde salvar.-->
@@ -155,28 +158,67 @@
                     </ul>
                     
                     <ul class="form">
-                        <label id="lbnome" class="labelInput"> CPF:</label>
-                        <input type="text" id="iptnome" name="cpf" id="nome" class="inputUser" value="<?= $campo["cpf"] ?>"/>
+                        <label id="lbnome" class="labelInput">CPF:</label>
+                        <input type="text"  name="cpf" id="endereco" class="inputUser" value="<?= $campo["cpf"] ?>"/>
                     </ul>
                     
                     <ul class="form">
-                        <label id="lbnome" class="labelInput"> Data Nascimento:</label>
-                        <input type="text" id="iptnome" name="data_nasc" id="nome" class="inputUser" value="<?= $campo["data_nasc"] ?>"/>
+                        <label id="lbnome" class="labelInput">Data nascimento:</label>
+                        <input type="date"  name="data_nasc" id="endereco" class="inputUser" value="<?= $campo["data_nasc"] ?>"/>
                     </ul>
                     
-                    <ul class="form">
-                        <label id="lbnome" class="labelInput">Cep:</label>
-                        <input type="text"  name="cep" id="cep" class="inputUser" onblur="pesquisacep(this.value)" value="<?= $campo["cep"] ?>"/>
-                    </ul>
+                    
+                     <ul class="form">
+                                    <label id="lbnome" class="labelInput">CEP:</label>
+                                    <input type="text"  name="cep" id="cep" class="inputUser" value="<?= $campo["cep"] ?>"/>
+                                </ul>
+
                     
                     <ul class="form">
-                        <label id="lbnome" class="labelInput">Endereco:</label>
-                        <input type="text"  name="endereco" id="endereco" class="inputUser" value="<?= $campo["endereco"] ?>"/>
+                                    <label id="lbnome" class="labelInput">Estado:</label>
+                                    <select id="estado" name="estado" class="inputUser" value="<?= $campo["estado"] ?>"/>
+
+
+                                    <option value="">Selecione</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR<option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+
+                                    </select>
+
+                                </ul>
+                    
+                     <ul class="form">
+                        <label id="lbnome" class="labelInput">Endereço:</label>
+                        <input type="text"  name="endereco" id="endereco" class="inputUser" value="<?= $campo["endereco"] ?>">
                     </ul>
                     
-                    <ul class="form">
-                        <label id="lbnome" class="labelInput">Bairro:</label>
-                        <input type="text"  name="bairro" id="bairro" class="inputUser" value="<?= $campo["bairro"] ?>"/>
+                     <ul class="form">
+                        <label id="lbnome" class="labelInput">Complemento:</label>
+                        <input type="text"  name="complemento" id="complemento" class="inputUser" value="<?= $campo["complemento"] ?>"/>
                     </ul>
                     
                     <ul class="form">
@@ -184,24 +226,59 @@
                         <input type="text"  name="cidade" id="cidade" class="inputUser" value="<?= $campo["cidade"] ?>">
                     </ul>
                     
-                    <ul class="form">
-                        <label id="lbnome" class="labelInput">Complemento:</label>
-                        <input type="text"  name="complemento" id="complemento" class="inputUser" value="<?= $campo["complemento"] ?>"/>
-                    </ul>
-                   
-                    <ul class="form">
-                        <label id="lbnome" class="labelInput">Telefone/Celular:</label>
-                        <input type="tel" id="iptnome" name="telefone" class="inputUser" value="<?= $campo["telefone"] ?>"/>
-                    </ul>
                     
                     <ul class="form">
-                        <label id="lbnome" class="labelInput">Email:</label>
-                        <input type="email" id="iptnome" name="email" class="inputUser" value="<?= $campo["email"] ?>"/>
+                        <label id="lbnome" class="labelInput">Bairro:</label>
+                        <input type="text"  name="bairro" id="bairro" class="inputUser" value="<?= $campo["bairro"] ?>"/>
                     </ul>
+                    
+                  <ul class="form">
+                        <label id="lbnome" class="labelInput">Numero:</label>
+                        <input type="text"  name="numero" id="numero" class="inputUser" value="<?= $campo["numero"] ?>">
+                    </ul>
+                    
+                     <ul class="form">
+                        <label id="lbnome" class="labelInput">Telefone:</label>
+                        <input type="text"  name="telefone" id="bairro" class="inputUser" value="<?= $campo["telefone"] ?>"/>
+                    </ul>
+                   
+                    
+                    <ul class="form">
+                        <label id="lbnome" class="labelInput">E-mail:</label>
+                        <input type="email"  name="email"id="numero" class="inputUser" value="<?= $campo["email"] ?>"/>
+                    </ul>
+                    
+                      
+                    <ul class="form">
+                                    <label id="lbnome" class="labelInput">Função:</label>
+                                    <select id="estado" name="funcao" class="inputUser" value="<?= $campo["funcao"] ?>"/>
+
+
+                                    <option value="">Selecione</option>
+                                    <option value="Comum">Comum</option>
+                                    <option value="Funcionario">Funcionario</option>
+                                   
+                                    </select>
+
+                                </ul>
+                   
+                    
+                    <ul class="form">
+                        <label id="lbnome" class="labelInput">Senha:</label>
+                        <input type="password"  name="senha" id="senha" class="inputUser" value="<?= $campo["senha"] ?>"/>
+                    </ul>
+                    
+                   
+                    
+                    
+                  
+                    
+                
+                
 
                     <ul class="form">
                         <button  type="submit" value="Salvar" class="hvr-fade" >Salvar</button>
-                        <a href="Consultarusuario"> <input type="button" id="Cancelar" class="hvr-fade " value="Cancelar"/></a>
+                        <a href="Consultarusuario.php"> <input type="button" id="Cancelar" class="hvr-fade " value="Cancelar"/></a>
                     </ul>               
 
                 </table>

@@ -12,7 +12,7 @@
             </head>
         <body>
             <div class="logo">
-            <a href="indexmenu.html"><img src="img/Grave Store Logo HD.png" alt="Imagem" title="logo" width="80" height="70"/></a>
+            <a href="index.php"><img src="img/Grave Store Logo HD.png" alt="Imagem" title="logo" width="80" height="70"/></a>
         </div>
 
             <header role="banner" class="header">
@@ -23,7 +23,7 @@
                 <a href="login.php">Login</a>
             </div>
                 <div class="car">
-                <a href="carrinho.php"><img src="img/Carrinho branco.png" width="20px" height="20px"/></a>
+                    <a href="login.php"><img src="img/Carrinho branco.png" width="20px" height="20px"/></a>
             </div>
             
         </header>
@@ -31,10 +31,10 @@
             <nav class="menu" id="navbar">
             <ul>
                 <li><a href="carrinho.php">Camisas</a></li>
-                <li><a href="#">Calças</a></li>
-                <li><a href="#">Moletons</a></li>
-                <li><a href="#">Tênis</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="carrinho.php">Calças</a></li>
+                <li><a href="carrinho.php">Moletons</a></li>
+                <li><a href="carrinho.php">Tênis</a></li>
+                <li><a href="carrinho.php">Contato</a></li>
             </ul>
         </nav>
 

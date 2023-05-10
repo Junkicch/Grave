@@ -583,9 +583,9 @@ table{
 .main{
     display: flex;
     position: absolute;
-    top: 170%;
+    top: 200%;
     transform: translate(50%,50%)
-        background: transparent;
+  background: transparent;
 }
 
 .categorias{

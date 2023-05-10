@@ -179,6 +179,6 @@ and open the template in the editor.
             </footer>-->
             <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
-            <script src="script.js"></script>
+            <script src="js/script.js"></script>
     </body>
 </html>

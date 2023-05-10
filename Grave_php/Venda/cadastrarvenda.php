@@ -36,7 +36,7 @@
 
         $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
         mysqli_select_db($conn, '$db_grave');
-        $sql = "INSERT INTO tb_funcionario(nome, cpf, rg, orgao_emissor, uf, data_expedicao, data_nasc, sexo, etnia, ctps, cnh, pis_pasep, cep, endereco, complemento, numero, cidade, bairro, estado, telefone, email, funcao, salario, horario, banco, conta, agencia, tipo_conta, pix, senha) VALUES ('$nome', '$cpf', '$rg', '$orgao_emissor', '$uf', '$data_expedicao', '$data_nasc', '$sexo', '$etnia', '$ctps', '$cnh', '$pis_pasep', '$cep', '$endereco', '$complemento', '$numero', '$cidade', '$bairro', '$estado', '$telefone', '$email', '$funcao', '$salario', '$horario', '$banco', '$conta', '$agencia', '$tipo_conta', '$pix', '$senha')";
+        $sql = "INSERT INTO tb_venda(nome, cpf, rg, orgao_emissor, uf, data_expedicao, data_nasc, sexo, etnia, ctps, cnh, pis_pasep, cep, endereco, complemento, numero, cidade, bairro, estado, telefone, email, funcao, salario, horario, banco, conta, agencia, tipo_conta, pix, senha) VALUES ('$nome', '$cpf', '$rg', '$orgao_emissor', '$uf', '$data_expedicao', '$data_nasc', '$sexo', '$etnia', '$ctps', '$cnh', '$pis_pasep', '$cep', '$endereco', '$complemento', '$numero', '$cidade', '$bairro', '$estado', '$telefone', '$email', '$funcao', '$salario', '$horario', '$banco', '$conta', '$agencia', '$tipo_conta', '$pix', '$senha')";
         if (mysqli_query($conn, $sql)) {
             echo "<script>alert('Seus dados foram salvos !'); window.location = '../indexmenu.html';</script>";
         } else {

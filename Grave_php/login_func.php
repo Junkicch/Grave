@@ -14,7 +14,7 @@
 
         <header class="header">
             <div class="logo">
-                <a href="login_func.php"><img src="img/Grave Store Logo HD.png" alt="Imagem" title="logo" width="80" height="70"/></a>
+                <a href=""><img src="img/Grave Store Logo HD.png" alt="Imagem" title="logo" width="80" height="70"/></a>
             </div>
 
 
@@ -25,8 +25,8 @@
 
 
             <div class="formulario" id="box">
-                <h2>Login Usuario</h2>
-                <form method="post" action="testLogin.php" class="formulario">
+                <h2>Login Funcionario</h2>
+                <form method="post" action="testLogin_func.php" class="formulario">
 
                     <table>
 

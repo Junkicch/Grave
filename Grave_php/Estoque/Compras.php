@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Compras</title>
-        <link type="text/css" rel="stylesheet" href="../css/style.css">
+        <link type="text/css" rel="stylesheet" href="../css/stylee.css">
         <link rel="icon" type="imagem/png" href="../img/Marca D'água Grave Preto.png" />
     </head>
 

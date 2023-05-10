@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Cadastro Usuario</title>
         <link href="../img/Marca D'água Grave Preto.png" rel="icon">
-        <link rel="stylesheet" href="../css/stylee.css"/>
+        <link rel="stylesheet" href="../css/style-usuario.css"/>
         <!--<link rel="stylesheet" href="../css/formulariotop.css"/>-->
         <script>
             function limpa_formulário_cep() {
@@ -138,7 +138,7 @@
 
 
 
-            <div class="formulario" id="boxmedio">
+            <div class="formulario" id="box">
                 <h2>Cadastro Usuario</h2>
                 <form method="post" action="cadastrarusuario.php" class="formulario">
 

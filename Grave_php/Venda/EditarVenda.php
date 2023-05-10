@@ -14,9 +14,9 @@ $recn= filter_input(INPUT_POST, 'colecao');
 
 
 
-  if(mysqli_query($conn, "UPDATE tb_produto SET tipo='$recnome', tamanho='$reccep', cor='$recendereco', colecao='$recn', preco='$reccomplemento' WHERE id_funcionario='$recid'")) {
+  if(mysqli_query($conn, "UPDATE tb_produto SET tipo='$recnome', tamanho='$reccep', cor='$recendereco', colecao='$recn', preco='$reccomplemento' WHERE id_venda='$recid'")) {
 
-    echo "<script>alert('Dados alterado com sucesso!'); window.location = 'ConsultarFuncionario.php';</script>";
+    echo "<script>alert('Dados alterado com sucesso!'); window.location = 'ConsultarVenda.php';</script>";
 
   }else {
 

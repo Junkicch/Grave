@@ -12,6 +12,16 @@ and open the template in the editor.
     margin: 5px;
     position: relative;
     left: 20px;
+    top: 200%;
+}
+
+
+.main{
+    display: flex;
+    position: absolute;
+    top: 200%;
+    transform: translate(50%,50%)
+  background: transparent;
 }
 
 #div--img--card{

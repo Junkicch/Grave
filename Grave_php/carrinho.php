@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/styleCard.css"/>
-        <link rel="stylesheet" href="css/styleCart1.css">
+        <link rel="stylesheet" href="css/styleCart1.css"/>
+        
         
     </head>
     <body>
@@ -30,15 +31,15 @@
         
         <nav class="menu" id="navbar">
             <ul>
-                <li><a href="">Camisas</a></li>
-                <li><a href="#">Calças</a></li>
-                <li><a href="#">Moletons</a></li>
-                <li><a href="#">Tênis</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="carrinho.php">Camisas</a></li>
+                <li><a href="carrinho.php">Calças</a></li>
+                <li><a href="carrinho.php">Moletons</a></li>
+                <li><a href="carrinho.php">Tênis</a></li>
+                <li><a href="carrinho.php">Contato</a></li>
             </ul>
         </nav>
         
-        <main class="main">
+        <main class="main"  >
             
             <div class="modal">
                 <div class="content">
@@ -75,7 +76,9 @@
                                     ?>
                                     <td>
                                         <div id="div--img--card">
-                                        <img id="img--card" src="<?php echo 'img/Roupas/' . $linhas['imagem']; ?>" >
+                                            <img id="img--card" src="<?php echo 'img/Roupas/' . $linhas['imagem']; ?>">
+                                            
+                                            
                                         <div id="comentarios--img--card">
                                         <br><?php echo $linhas["nome"]; ?><br>
                                             <?php echo $linhas["preco"]; ?><br>

@@ -6,7 +6,7 @@
 
         <meta charset="UTF-8">
 
-        <title>Editar Funcionario</title>
+        <title>Editar Venda</title>
 
         <link rel="stylesheet" href="../css/stylee.css"/>
         <link rel="icon" type="imagem/png" href="../img/Marca D'água Grave Preto.png" />
@@ -87,7 +87,7 @@
 
         $recid = filter_input(INPUT_GET, 'editarid');
 
-        $selecionar = mysqli_query($conn, "SELECT * FROM tb_funcionario WHERE id_funcionario=$recid");
+        $selecionar = mysqli_query($conn, "SELECT * FROM tb_venda WHERE id_venda=$recid");
 
         $campo = mysqli_fetch_array($selecionar);
         ?>
@@ -126,8 +126,8 @@
 
                     <li><a href="#">Funcionários</a>
                         <ul>
-                            <li><a href="../funcionario/FormFuncionario.php">Cadastrar</a></li>
-                            <li><a href="../funcionario/Consultarfuncionario.php">Consultar</a>
+                            <li><a href="../Funcionario/FormFuncionario.php">Cadastrar</a></li>
+                            <li><a href="../Funcionario/ConsultarFuncionario.php">Consultar</a>
                         </ul>
                     <li><a href="#">Almoxarifado</a>
                         <ul>
@@ -144,9 +144,9 @@
 
 
                     <!esta linha cria um campo oculto para passar o id_Usuario, pois senão ao clicar em Salvar o código não saberá onde salvar.-->
-                    <input type="hidden" name="id" value="<?= $campo["id_funcionario"] ?>"> 
+                    <input type="hidden" name="id" value="<?= $campo["id_venda"] ?>"> 
                     <div class="formulario" id="box">
-                        <h2>Alterar Funcionario</h2>
+                        <h2>Alterar Venda</h2>
                         <form method="post" action="cadastrarproduto.php" class="formulario">
 
                             <table>
@@ -381,7 +381,7 @@
 
 
                                 <input type="submit" class="hvr-fade " value="Salvar" >
-                                <a href="ConsultarFuncionario.php"><input type="button" class="hvr-fade " value="Cancelar"/></a>
+                                <a href="ConsultarVenda.php"><input type="button" class="hvr-fade " value="Cancelar"/></a>
                                 </ul>               
 
                             </table>

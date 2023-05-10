@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Consultar Fornecedor </title>
-        <link type="text/css" rel="stylesheet" href="../css/style-usuario.csss">
+        <link type="text/css" rel="stylesheet" href="../css/stylee.css">
         <link rel="icon" type="imagem/png" href="../img/Marca D'água Grave Preto.png" />
 
     </head>
@@ -17,7 +17,7 @@
 
                     <li><a href="#">Usuários</a>
                         <ul>
-                             <li><a href="../Usuario/Consultarusuario.php">Consultar</a>
+                             <li><a href="../Usuario2/Consultarusuario.php">Consultar</a>
                         </ul>
                     </li>
                     <li><a href="#">Produtos</a>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Consultar Funcionarios</title>
+        <title>Consultar Vendas</title>
         <link type="text/css" rel="stylesheet" href="../css/stylee.css">
 
     </head>
@@ -39,12 +39,12 @@
                             <li><a href="../Venda/Consultarvenda.php">Consultar</a>
                         </ul>
                     </li>
-
                     <li><a href="#">Funcionários</a>
                         <ul>
-                            <li><a href="../funcionario/FormFuncionario.php">Cadastrar</a></li>
-                            <li><a href="../funcionario/Consultarfuncionario.php">Consultar</a>
+                            <li><a href="../Funcionario/FormFuncionario.php">Cadastrar</a></li>
+                            <li><a href="../Funcionario/ConsultarFuncionario.php">Consultar</a>
                         </ul>
+                    
                     <li><a href="#">Almoxarifado</a>
                         <ul>
                             <li><a href="../Estoque/Compras.php">Cadastrar Nova Compra</a></li>
@@ -54,7 +54,7 @@
                         </nav>
                         </header>
         <main>
-        <h1>Consultar Funcionarioes Cadastrados</h1>
+        <h1>Consultar Vendaes Cadastrados</h1>
         <table>
             <tr class="id">
                 <td align="center"> <strong>ID</strong></td>	
@@ -97,11 +97,11 @@
 
             <?php
             include("../conectarbd.php");
-            $selecionar = mysqli_query($conn, "SELECT * FROM tb_funcionario");
+            $selecionar = mysqli_query($conn, "SELECT * FROM tb_venda");
             while ($campo = mysqli_fetch_array($selecionar)) {
                 ?>
             <tr class="usuarios">
-                    <td align="center"><?= $campo["id_funcionario"] ?></td>	
+                    <td align="center"><?= $campo["id_venda"] ?></td>	
                 <td align="center"><?= $campo["nome"] ?></td>
                 
                 <td align="center"><?= $campo["cpf"] ?></td>	
@@ -135,8 +135,8 @@
                 <td align="center"><?= $campo["tipo_conta"] ?></td>
                 <td align="center"><?= $campo["pix"] ?></td>	
 
-                <td align="center"><a href="FormEditarFuncionario.php?editarid=<?php echo $campo ['id_funcionario']; ?>" class="editar">Editar</a></td>
-                    <td align="center"><a href="ExcluirFuncionario.php?p=excluir&funcionario=<?php echo $campo['id_funcionario']; ?>" class="editar">Excluir</a></td>
+                <td align="center"><a href="FormEditarVenda.php?editarid=<?php echo $campo ['id_venda']; ?>" class="editar">Editar</a></td>
+                    <td align="center"><a href="ExcluirVenda.php?p=excluir&venda=<?php echo $campo['id_venda']; ?>" class="editar">Excluir</a></td>
                 </tr>
             <?php } ?>
         </table><br>
