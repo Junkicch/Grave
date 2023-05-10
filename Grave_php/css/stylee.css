@@ -196,6 +196,19 @@ option{
     width: 30%;
 }
 
+.venda{
+    font-family: 'Roboto Condensed';
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    background-color:  #1E1E1E;
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%;
+}
+
 h1{
     color: white;
     text-align: center;
@@ -276,7 +289,7 @@ background-image: url("../img/Marca D'água Grave Preto.png");
     position: absolute;
     top: 55%;
     left: 70%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-70%);
     width: 700px;
 }
 

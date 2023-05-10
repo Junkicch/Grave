@@ -57,40 +57,13 @@
         <h1>Consultar Vendaes Cadastrados</h1>
         <table>
             <tr class="id">
-                <td align="center"> <strong>ID</strong></td>	
-                <td align="center"> <strong>Nome</strong></td>	
-                <td align="center"> <strong>Data de Nascimento</strong></td>
-                <td align="center"> <strong>CPF</strong></td>	
-                <td align="center"> <strong>RG</strong></td>	
-                <td align="center"> <strong>Orgão Emissor</strong></td>	
-                <td align="center"> <strong>UF</strong></td>	
-                <td align="center"> <strong>Data de Expedição</strong></td>	
-                <td align="center"> <strong>Sexo</strong></td>	
-                <td align="center"> <strong>Etnia</strong></td>	
-                <td align="center"> <strong>CTPS</strong></td>	
-                <td align="center"> <strong>CNH</strong></td>	
-                <td align="center"> <strong>PIS/Pasep</strong></td>
-                <td align="center"> <strong>CEP</strong></td>
-                <td align="center"> <strong>Endereço</strong></td>
-               
-                
-                <td align="center"> <strong>Complemento</strong></td>
-                <td align="center"> <strong>Numero</strong></td>
-                
-                 <td align="center"> <strong>Cidade</strong></td>
-                 <td align="center"> <strong>Bairro</strong></td>
-                 <td align="center"> <strong>Estado</strong></td>
-                 
-                <td align="center"> <strong>Telefone/Celular</strong></td>
-                <td align="center"> <strong>Email</strong></td>
-                <td align="center"> <strong>Função</strong></td>	
-                <td align="center"> <strong>Salário</strong></td>	
-                <td align="center"> <strong>Horario</strong></td>	
-                <td align="center"> <strong>Banco</strong></td>	
-                <td align="center"> <strong>Conta</strong></td>	
-                <td align="center"> <strong>Agência</strong></td>	
-                <td align="center"> <strong>Tipo de Conta</strong></td>	
-                <td align="center"> <strong>Pix</strong></td>	
+                <td align="center"> <strong>ID</strong></td>
+                <td align="center"> <strong>Quantidade</strong></td>
+                <td align="center"> <strong>Valor Total</strong></td>
+                <td align="center"> <strong>Forma de Pagamento</strong></td>
+                <td align="center"> <strong>Entrega</strong></td>
+                <td align="center"> <strong>Vendedor</strong></td>
+                	
                 <td width="10"> <strong>Editar</strong></td>
                 <td width="10"> <strong>Deletar</strong></td>
             </tr>
@@ -102,38 +75,13 @@
                 ?>
             <tr class="usuarios">
                     <td align="center"><?= $campo["id_venda"] ?></td>	
-                <td align="center"><?= $campo["nome"] ?></td>
-                
-                <td align="center"><?= $campo["cpf"] ?></td>	
-                
-                <td align="center"><?= $campo["rg"] ?></td>	
-                <td align="center"><?= $campo["orgao_emissor"] ?></td>
-                <td align="center"><?= $campo["uf"] ?></td>
-                <td align="center"><?= $campo["data_expedicao"] ?></td>
-                <td align="center"><?= $campo["data_nasc"] ?></td>
-                <td align="center"><?= $campo["sexo"] ?></td>	
-                <td align="center"><?= $campo["etnia"] ?></td>	
-                <td align="center"><?= $campo["ctps"] ?></td>	
-                <td align="center"><?= $campo["cnh"] ?></td>	
-                <td align="center"><?= $campo["pis_pasep"] ?></td>
-                <td align="center"><?= $campo["cep"] ?></td>
-                <td align="center"><?= $campo["endereco"] ?></td>
-               
-                <td align="center"><?= $campo["complemento"] ?></td>
-                 <td align="center"><?= $campo["numero"] ?></td>
-                 <td align="center"><?= $campo["cidade"] ?></td>
-                <td align="center"><?= $campo["bairro"] ?></td>
-                 <td align="center"><?= $campo["estado"] ?></td>
-                <td align="center"><?= $campo["telefone"] ?></td>
-                <td align="center"><?= $campo["email"] ?></td>
-                <td align="center"><?= $campo["funcao"] ?></td>
-                <td align="center"><?= $campo["salario"] ?></td>
-                <td align="center"><?= $campo["horario"] ?></td>	
-                <td align="center"><?= $campo["banco"] ?></td>	
-                <td align="center"><?= $campo["conta"] ?></td>	
-                <td align="center"><?= $campo["agencia"] ?></td>
-                <td align="center"><?= $campo["tipo_conta"] ?></td>
-                <td align="center"><?= $campo["pix"] ?></td>	
+                <td align="center"><?= $campo["quantidade"] ?></td>
+                <td align="center"><?= $campo["valor_total"] ?></td>
+                <td align="center"><?= $campo["forma_pagamento"] ?></td>
+                <td align="center"><?= $campo["entrega"] ?></td>
+                <td align="center"><?= $campo["vendedor"] ?></td>
+
+                	
 
                 <td align="center"><a href="FormEditarVenda.php?editarid=<?php echo $campo ['id_venda']; ?>" class="editar">Editar</a></td>
                     <td align="center"><a href="ExcluirVenda.php?p=excluir&venda=<?php echo $campo['id_venda']; ?>" class="editar">Excluir</a></td>

@@ -22,8 +22,8 @@
                     </li>
                     <li><a href="#">Produtos</a>
                         <ul>
-                            <li><a href="Produto/FormProduto.php">Cadastrar</a></li>
-                            <li><a href="Produto/Consultarproduto.php">Consultar</a>
+                            <li><a href="../Produto/FormProduto.php">Cadastrar</a></li>
+                            <li><a href="../Produto/Consultarproduto.php">Consultar</a>
                         </ul>
                     </li>
 

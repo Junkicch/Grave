@@ -60,259 +60,35 @@
 
 
 
-                            <div class="funcionario" >
+                            <div class="venda" id="boxmenor">
                                 <h2>Cadastrar Venda</h2>
                                 <form method="post" action="cadastrarvenda.php" class="formulario">
 
                                     <table> 
-
-
                                         <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Nome:</label>
-                                            <input type="text" id="iptnome" name="nome" id="nome" class="inputUser"/>
-                                        </ul>
+                                    <label id="lbnome" class="labelInput">Quantidade:</label>
+                                    <input type="text"  name="quantidade" id="nome" class="inputUser" />
+                                </ul>
 
+                                <ul class="form">
+                                    <label id="lbnome" class="labelInput">Valor Total:</label>
+                                    <input type="text"  name="valor_total" id="cpf" class="inputUser" />
+                                </ul>
 
+                                <ul class="form">
+                                    <label id="lbnome" class="labelInput">Forma de Pagamento:</label>
+                                    <input type="text"  name="forma_pagamento" id="rg" class="inputUser" />
+                                </ul>
 
-
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> CPF:</label>
-                                            <input type="text" id="iptnome" name="cpf" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> RG:</label>
-                                            <input type="text" id="iptnome" name="rg" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Orgão Emissor:</label>
-                                            <input type="text" id="iptnome" name="orgao_emissor" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> UF:</label>
-                                            <select id="iptestado" name="uf" class="inputUser" value="<?= $campo["uf"] ?>"/>
-                                            
-                                            <option value="">Selecione</option>
-                                            <option value="AL">AL</option>
-                                            <option value="AP">AP</option>
-                                            <option value="AM">AM</option>
-                                            <option value="BA">BA</option>
-                                            <option value="CE">CE</option>
-                                            <option value="DF">DF</option>
-                                            <option value="ES">ES</option>
-                                            <option value="GO">GO</option>
-                                            <option value="MA">MA</option>
-                                            <option value="MS">MS</option>
-                                            <option value="MT">MT</option>
-                                            <option value="MG">MG</option>
-                                            <option value="PA">PA</option>
-                                            <option value="PB">PB</option>
-                                            <option value="PR">PR<option>
-                                            <option value="PE">PE</option>
-                                            <option value="PI">PI</option>
-                                            <option value="RJ">RJ</option>
-                                            <option value="RN">RN</option>
-                                            <option value="RS">RS</option>
-                                            <option value="RO">RO</option>
-                                            <option value="RR">RR</option>
-                                            <option value="SC">SC</option>
-                                            <option value="SP">SP</option>
-                                            <option value="SE">SE</option>
-                                            <option value="TO">TO</option>
-                                            
-                                            </select>
-                                        </ul>
-
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Data de expedição:</label>
-                                            <input type="date" id="iptnome" name="data_expedicao" id="nome" class="inputUser"/>
-                                        </ul>
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Data de Nascimento:</label>
-                                            <input type="date" id="iptnome" name="data_nasc" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Sexo:</label>
-                                            <select name="sexo" class="inputUser" value="<?= $campo["sexo"] ?>"/>
-                                            <option value="">Selecione</option>
-                                            <option value="Masculino">Masculino</option>
-                                            <option value="Feminino">Feminino</option>
-                                            <option value="Outros">Outros</option>
-                                            </select>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Etnia:</label>
-                                            <select name="etnia" placeholder="selecione" class="inputUser" value="<?= $campo["etnia"] ?>"/>
-                                            <option value="">Selecione</option>
-                                            <option value="Preto">Preto</option>
-                                            <option value="Branco">Branco</option>
-                                            <option value="Pardo">Pardo</option>
-                                            <option value="Amarelo">Amarelo</option>
-                                            <option value="Indigenas">Indigenas</option>
-                                            
-                                            </select>
-                                        </ul>
-                                        
-                                        
-                                   
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Ctps:</label>
-                                            <input type="text" id="iptnome" name="ctps" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> CNH:</label>
-                                            <input type="text" id="iptnome" name="cnh" id="nome" class="inputUser"/>
-                                        </ul>
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Pis/Pasep:</label>
-                                            <input type="text" id="iptnome" name="pis_pasep" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput">Cep:</label>
-                                            <input type="text"  name="cep" id="cep" class="inputUser" onblur="pesquisacep(this.value)"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput">Endereço:</label>
-                                            <input type="text"  name="endereco" id="endereco" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput">Complemento:</label>
-                                            <input type="text"  name="complemento"id="complemento" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput">Numero:</label>
-                                            <input type="text"  name="numero" id="numero" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput">Cidade:</label>
-                                            <input type="text"  name="cidade"id="cidade" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput">Bairro:</label>
-                                            <input type="text"  name="bairro" id="bairro" class="inputUser"/>
-                                        </ul>
-
-                                       <ul class="form">
-                                            <label id="lbnome" class="labelInput"> UF:</label>
-                                            <select id="iptestado" name="estado" class="inputUser" value="<?= $campo["estado"] ?>"/>
-                                            
-                                            <option value="">Selecione</option>
-                                            <option value="AL">AL</option>
-                                            <option value="AP">AP</option>
-                                            <option value="AM">AM</option>
-                                            <option value="BA">BA</option>
-                                            <option value="CE">CE</option>
-                                            <option value="DF">DF</option>
-                                            <option value="ES">ES</option>
-                                            <option value="GO">GO</option>
-                                            <option value="MA">MA</option>
-                                            <option value="MS">MS</option>
-                                            <option value="MT">MT</option>
-                                            <option value="MG">MG</option>
-                                            <option value="PA">PA</option>
-                                            <option value="PB">PB</option>
-                                            <option value="PR">PR<option>
-                                            <option value="PE">PE</option>
-                                            <option value="PI">PI</option>
-                                            <option value="RJ">RJ</option>
-                                            <option value="RN">RN</option>
-                                            <option value="RS">RS</option>
-                                            <option value="RO">RO</option>
-                                            <option value="RR">RR</option>
-                                            <option value="SC">SC</option>
-                                            <option value="SP">SP</option>
-                                            <option value="SE">SE</option>
-                                            <option value="TO">TO</option>
-                                            
-                                            </select>
-                                        </ul>
-
-
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput">Telefone/Celular:</label>
-                                            <input type="text"  name="telefone" id="tel_cel" class="inputUser"/>
-                                        </ul>
-
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput">Email:</label>
-                                            <input type="text"  name="email" id="email" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Função:</label>
-                                            <select name="funcao" class="inputUser" value="<?= $campo["funcao"] ?>"/>
-                                            
-                                            <option value="">Selecione</option>
-                                            <option value="Artista">Artista</option>
-                                            <option value="Vendedor">Vendedor</option>
-                                            <option value="Empacotador">Empacotador</option>
-                                            <option value="Assistente Administrativo">Assistente Administrativo</option>
-                                            <option value="Assitente em Contabilidade">Assitente em Contabilidade</option>
-                                            <option value="Assistente de Recursos Humanos">Assistente de Recursos Humanos</option>
-                                            </select>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Salario:</label>
-                                            <input type="text" id="iptnome" name="salario" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Horario:</label>
-                                            <select name="horario" class="inputUser" value="<?= $campo["horario"] ?>"/>
-                                            
-                                            <option value="">Selecione</option>
-                                            <option value="Manhã">Manhã</option>
-                                            <option value="Tarde">Tarde</option>
-                                            <option value="Noite">Noite</option>
-                                            <option value="Integral">Integral</option>
-                                            </select>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Banco:</label>
-                                            <input type="text" id="iptnome" name="banco" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Conta:</label>
-                                            <input type="text" id="iptnome" name="conta" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Agência:</label>
-                                            <input type="text" id="iptnome" name="agencia" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Tipo de Conta:</label>
-                                            <input type="text" id="iptnome" name="tipo_conta" id="nome" class="inputUser"/>
-                                        </ul>
-
-                                        <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Pix:</label>
-                                            <input type="text" id="iptnome" name="pix" id="nome" class="inputUser"/>
-                                        </ul>
-                                        
-                                         <ul class="form">
-                                            <label id="lbnome" class="labelInput"> Senha:</label>
-                                            <input type="password" id="iptnome" name="senha" id="nome" class="inputUser"/>
-                                        </ul>
+                                <ul class="form">
+                                    <label id="lbnome" class="labelInput">Entrega:</label>
+                                    <input type="text"  name="entrega" id="orgao_emissor" class="inputUser" />
+                                </ul>
+                                
+                                <ul class="form">
+                                    <label id="lbnome" class="labelInput">Vendedor:</label>
+                                    <input type="text"  name="vendedor" id="orgao_emissor" class="inputUser" />
+                                </ul>
 
                                         <ul class="form">
                                             <button type="submit" id="Cadastrar" class="hvr-fade ">Cadastrar</button>
